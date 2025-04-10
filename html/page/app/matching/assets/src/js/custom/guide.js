@@ -1,17 +1,6 @@
 //guide.js
 
 
-    // 현재 경로를 가져와서
-    const currentPath = window.location.pathname;
-
-    // 현재 페이지가 /dbApp_guide/ 경로가 아니면
-    if (!currentPath.startsWith('/dbApp_guide/')) {
-      const redirectTo = '/dbApp_guide' + currentPath;
-      window.location.replace(redirectTo);
-    }
-
-
-
 
 //Nav
 $(document).ready(function(){
