@@ -1,101 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-
-
-    <title>컴포넌트</title>
-
-
-    <!-- jquery -->
-    <script type="text/javascript" src="/html/page/app/matching/assets/src/js/jquery/jquery-3.6.0.min.js"></script>
-
-    <!-- materialize -->
-    <script type="text/javascript" src="/html/page/app/matching/assets/src/js/materialize.js"></script>
-
-    <!-- guide.js -->
-    <script type="text/javascript" src="/html/page/app/matching/assets/src/js/custom/guide.js"></script>
-
-
-    <!-- materialize CSS -->
-    <link rel="stylesheet" href="/html/page/app/matching/assets/src/css/materialize.min.css" />
-
-    <!-- style.css -->
-    <link rel="stylesheet" href="/html/page/app/matching/assets/src/css/style.css" />
-
-    <!-- guideStyle_2025.css -->
-    <link rel="stylesheet" href="/html/page/app/matching/assets/src/css/guideStyle_2025.css" />
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
-
-    <!-- highlight.js -->
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
-
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/go.min.js"></script>
-
-    <!-- highlight copy -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-
-    <!-- guideStyle_2025.js -->
-    <script type="text/javascript" src="/html/page/app/matching/assets/src/js/custom/guideStyle_2025.js"></script>
-
-    <script>
-        hljs.initHighlightingOnLoad();
-
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.querySelectorAll('pre code').forEach((el) => {
-                el.parentNode.classList.add('hljs');
-
-                // 복사 버튼 생성
-                let button = document.createElement("a");
-                button.innerHTML = "📄";
-                button.className = "copy-button";
-                el.parentNode.appendChild(button);
-
-                // 복사 기능 추가
-                button.addEventListener("click", function () {
-                    let text = el.innerText;
-                    navigator.clipboard.writeText(text).then(function () {
-                        button.innerHTML = "Copied!";
-                        setTimeout(function () {
-                            button.innerHTML = "📄";
-                        }, 2000);
-                    }, function (err) {
-                        console.error('복사 실패: ', err);
-                    });
-                });
-            });
-        });
-
-
-        $(function(){
-
-            //주소링크 생성_sitemap
-            $('.sidebar_list .tab_list ul[title="siteMap_app"] li a').each(function () {
-                $(this).prop({
-                    href: '/html/page/app/matching/assets/src/pages/' + $(this).attr('href'),
-                    target: 'if',
-                });
-            });
-
-        });
-
-
-
-    </script>
-
-
+  <meta http-equiv="refresh" content="0; url=/html/page/app/matching/assets/src/pages/preview.html">
+  <title>Redirecting...</title>
 </head>
-
 <body>
-
-    Hello~~!
-
+  <p>페이지를 이동 중입니다. <a href="/html/page/app/matching/assets/src/pages/preview.html">클릭해서 이동</a></p>
 </body>
-
 </html>
