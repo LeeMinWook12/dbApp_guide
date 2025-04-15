@@ -94,7 +94,13 @@
         });
 
     </script>
-
+    
+    <!-- DEDS-311 -->
+    <script>
+        $(function(){
+            $('.collapsible').collapsible();
+        });
+    </script>
 
 
 </head>
@@ -167,9 +173,15 @@
                     </div>
 
                     <div class="h20"></div>
+                    
+                    <!-- DEDS-311 -->
+                    <div class="color_tp_pp font_sbms">최종 주문요청</div>
+                    
+                    <div class="h20"></div>
+                    <!-- DEDS-311 end -->
 
                     <div class="box_order_list">
-                        <div class="font_sbmb marB8">주문확인중</div>
+                        <div class="font_sbmb marB8">배송완료</div>
                         <div class="order_list_db">
                             <div class="img_area">
                                 <div class="no_Thumb_Img">
@@ -182,8 +194,7 @@
                                 <li class="color_t_s font_ssr marT2">TW-0128</li>
                                 <li class="color_t_s font_ssr marB2">1개</li>
                                 <li class="d-flex gap04">
-                                    <span class="font_sbss">예상금액</span>
-                                    <span class="font_sbsb">12,510원</span>
+                                     <span class="font_sbsb">12,510원</span>
                                 </li>
                             </ul>
                         </div>
@@ -201,7 +212,7 @@
 
 
                     <div class="box_order_list">
-                        <div class="font_sbmb marB8">주문확인중</div>
+                        <div class="font_sbmb marB8">배송완료</div>
                         <div class="order_list_db">
                             <div class="img_area">
                                 <img src="/html/page/app/matching/assets/src/images/sample/sam_order16.png" alt="">
@@ -214,7 +225,6 @@
                                     <span class="color_t_s font_ssr">1개</span>
                                 </li>
                                 <li class="d-flex gap04">
-                                    <span class="font_sbss">예상금액</span>
                                     <span class="font_sbsb">5,000원</span>
                                 </li>
                             </ul>
@@ -233,20 +243,89 @@
                 </div>
                 <!-- pad20 -->
 
+                <!-- DEDS-311 -->
+                <ul class="collapsible default">
+                    <li class="bder_bottom">
+                        <div class="collapsible-header pad20">
+                            <span class="font_sbms">최초 주문요청</span>
+                            <span class="arrow"></span>
+                        </div>
+                        <div class="collapsible-body noPad">
+                            <div class="pad20 back_FAFAFA">
+                                
+
+                                <div class="box_order_list">
+                                    <div class="font_sbmb marB8">배송완료</div>
+                                    <div class="order_list_db">
+                                        <div class="img_area">
+                                            <div class="no_Thumb_Img">
+                                                <img src="/html/page/app/matching/assets/src/images/sample/sam_order14.png" alt="">
+                                            </div>
+                                        </div>
+                                        <ul class="od_txt">
+                                            <li class="font_sbss">11성인용 보행기</li>
+                                            <li class="color_t_s font_ssr marT2">TW-0128</li>
+                                            <li class="color_t_s font_ssr marB2">1개</li>
+                                            <li class="d-flex gap04">
+                                                 <span class="font_sbsb">523,850원</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                                <!-- box_order_list -->
+            
+                                <div class="h12"></div>
+            
+            
+                                <div class="box_order_list">
+                                    <div class="color_t_danger font_sbmb marB8">취소요청</div>
+                                    <div class="order_list_db">
+                                        <div class="img_area">
+                                            <img src="/html/page/app/matching/assets/src/images/sample/sam_order16.png" alt="">
+                                        </div>
+                                        <ul class="od_txt">
+                                            <li class="font_sbss">요실금팬티</li>
+                                            <li class="color_t_s font_ssr marT2">MSPT-001(여성)</li>
+                                            <li class="breadcrumb_area marB2">
+                                                <span class="color_t_s font_ssr">M(95)</span>
+                                                <span class="color_t_s font_ssr">1개</span>
+                                            </li>
+                                            <li class="d-flex gap04">
+                                                <span class="font_sbsb">5,000원</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="h16"></div>
+                                    
+                                    <a class="waves-effect btn btn-middle btn_cancel w100p">
+                                        <span class="color_tp_s font_sbss">취소사유</span>
+                                    </a>
+            
+                                </div>
+                                <!-- box_order_list -->
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- DEDS-311 end -->
+
+
                 <div class="h12 back_F7F7F7"></div>
 
                 <div class="padH24W20">
 
-                    <div class="font_sblb">총 예상금액</div>
+                    <div class="font_sblb">총 예상 본인부담금</div>
 
                     <div class="h20"></div>
 
                     <div class="align_between_center">
                         <div class="breadcrumb_area">
-                            <span class="color_t_s font_sbsr">상품 총 금액</span>
                             <span class="font_sbss">3개</span>
                         </div>
-                        <div class="font_sblb">299,300원</div>
+                        <div class="font_sblb">99,300원</div>
                     </div>
 
                     <div class="h32"></div>

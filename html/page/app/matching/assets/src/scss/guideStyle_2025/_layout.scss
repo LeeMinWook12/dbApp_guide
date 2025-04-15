@@ -4,6 +4,36 @@ $headerHeight : 80px;
 $navWidth : 250px;
 $sectionTitleHeight : 150px;
 
+
+//iframe 전체화면 토글
+body.iframeFullpage{
+
+    header{display: none;}
+    .wrap{
+        max-width: initial;
+        nav.sidebar{
+            display: none;
+        
+            & + section{
+                margin: 0;
+            
+                .section_title{display: none;}
+
+                .iframe_back{
+                    padding: 0;
+                
+                    .gs_iframe{
+                        height: 100vh;
+                        max-width: initial;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
 header{
     position: sticky;
     top: 0;
@@ -401,6 +431,12 @@ header{
             z-index: 300;
             right: 20px;
             bottom:76px;
+
+            &.active{
+
+                background: #333333cc url('/html/page/app/matching/assets/src/images/04icon/icon_pageDefault.svg') no-repeat center;
+
+            }
             
         }
 

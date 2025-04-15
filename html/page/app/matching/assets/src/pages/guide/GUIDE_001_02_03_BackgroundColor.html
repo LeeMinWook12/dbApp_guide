@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 
-    <title>GUIDE_001_02_01_ThemeColor.html</title>
+    <title>GUIDE_001_02_03_BackgroundColor.html</title>
 
 
     <!-- jquery -->
@@ -101,9 +101,9 @@
                             <li>
                                 <a class="arrow active">Colors</a>
                                 <ul class="dept2">
-                                    <li><a class="active" href="GUIDE_001_02_01_ThemeColor.html">Theme Color</a></li>
+                                    <li><a href="GUIDE_001_02_01_ThemeColor.html">Theme Color</a></li>
                                     <li><a href="GUIDE_001_02_02_TextColor.html">Text Color</a></li>
-                                    <li><a href="GUIDE_001_02_03_BackgroundColor.html">Background Color</a></li>
+                                    <li><a class="active" href="GUIDE_001_02_03_BackgroundColor.html">Background Color</a></li>
                                     <li><a href="GUIDE_001_02_04_BorderColor.html">Border Color</a></li>
                                     <li><a href="GUIDE_001_02_05_IconColor.html">Icon Color</a></li>
                                 </ul>                            
@@ -128,26 +128,154 @@
 
                 <div class="h48"></div>
 
-                <div class="titleNav">Theme Color</div>
+                <div class="titleNav">Background Color</div>
 
                 <div class="h24"></div>
  
                 <div class="raoundBox_01">
-                    색상(Color)은 이로움 돌봄앱 서비스만의 브랜드 경험을 전달합니다.
-                    색상은 명확한 커뮤니케이션을 위해 Hex Code보다는 컬러 명을 사용합니다. 정의되지 않은 새로운 컬러는 재사용성이 높을 경우에만 담당자와 논의하여 컬러 토큰에 추가하여 관리합니다.
+                    배경 색상에만 사용하는 컬러입니다.  텍스트, 배경, 아이콘 색상과 중복되는 색상이 있어도 지정된 토큰 색상으로만 사용합니다.
                 </div>
 
                 <div class="h52"></div>
 
-                <h3 class="title fw700">Main brand Colors</h3>
+                <h3 class="title fw700">구성요소 예시</h3>
+
+                <div class="h24"></div>
+
+                <div class="raoundBox_01 flex_center">
+                    <img src="/html/page/app/matching/assets/src/images/100guide/back_07_backgroundColor.png" alt="Typeface">
+                </div>
+
+                <div class="h52"></div>
+
+                <h3 class="title fw700">Color/bg/Primitive</h3>
 
                 <div class="h12"></div>
 
                 <div class="color_tp_s font_sbmr">
-                    브랜드를 대표하는 색상으로, 포인트 및 액션 컴포넌트 색상으로 사용합니다.
+                    브랜드 색상, 컴포넌트를 구성하는 색상입니다.
                 </div>
 
                 <div class="h24"></div>
+
+                <table class="guide_table">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>토큰</th>
+                            <th>설명</th>
+                            <th>참조값</th>
+                            <th>Hex</th>
+                            <th class="center">컬러</th>
+                        </tr>
+                    </thead>
+                    <tbody class="col_ct_5">
+                        <tr>
+                            <td>Primary</td>
+                            <td>브랜드 주 색상 (예시 : 버튼, 입력 폼)</td>
+                            <td>brand/600</td>
+                            <td class="setBackgroundTD">#FF8120</td>
+                            <td><div class="setColorBox"></div></td>
+                        </tr>
+                        <tr>
+                            <td>primary-press</td>
+                            <td>브랜드 주 색상 (Press, Select)</td>
+                            <td>brand/800</td>
+                            <td class="setBackgroundTD">#EE6002</td>
+                            <td><div class="setColorBox"></div></td>
+                        </tr>
+                        <tr>
+                            <td>secondary</td>
+                            <td>컴포넌트 내 기본 블랙 색상</td>
+                            <td>neutral/200</td>
+                            <td class="setBackgroundTD">#EEEEEE</td>
+                            <td><div class="setColorBox border"></div></td>
+                        </tr>
+                        <tr>
+                            <td>secondary-press</td>
+                            <td>컴포넌트 내 기본 블랙 색상(Press, Select)</td>
+                            <td>neutral/300</td>
+                            <td class="setBackgroundTD">#E0E0E0</td>
+                            <td><div class="setColorBox border"></div></td>
+                        </tr>
+                        <tr>
+                            <td>selected</td>
+                            <td>선택되었을 때 배경 색상(예시 : 버튼, 입력 폼)</td>
+                            <td>brand/50</td>
+                            <td class="setBackgroundTD">#FFF5E6</td>
+                            <td><div class="setColorBox border"></div></td>
+                        </tr>
+                        <tr>
+                            <td>secondary-press</td>
+                            <td>선택되었을 때 배경 색상(Press, Select)</td>
+                            <td>brand/200</td>
+                            <td class="setBackgroundTD">#FFC77D</td>
+                            <td><div class="setColorBox"></div></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+
+                <div class="h52"></div>
+
+                <h3 class="title fw700">Color/bg</h3>
+
+                <div class="h12"></div>
+
+                <div class="color_tp_s font_sbmr">
+                    전체 화면에서 자유롭게 사용하는 색상입니다.
+                </div>
+
+                <div class="h24"></div>
+
+                <table class="guide_table">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>토큰</th>
+                            <th>설명</th>
+                            <th>참조값</th>
+                            <th>Hex</th>
+                            <th class="center">컬러</th>
+                        </tr>
+                    </thead>
+                    <tbody class="col_ct_5">
+                        <tr>
+                            <td>Primary</td>
+                            <td>기본 배경 색상</td>
+                            <td>Base/whie</td>
+                            <td class="setBackgroundTD">#FFFFFF</td>
+                            <td><div class="setColorBox border"></div></td>
+                        </tr>
+                        <tr>
+                            <td>secondary</td>
+                            <td>두번째 기본 배경 색상</td>
+                            <td>neutral/50</td>
+                            <td class="setBackgroundTD">#FAFAFA</td>
+                            <td><div class="setColorBox border"></div></td>
+                        </tr>
+                        
+
+                    </tbody>
+                </table>
+                
+
+
+
 
                 <img src="/html/page/app/matching/assets/src/images/100guide/back_01_themeColor.svg" class="w100p disBlock">
 
@@ -241,7 +369,7 @@
 
                 <img src="/html/page/app/matching/assets/src/images/100guide/back_05_themeColor.png" class="w100p disBlock">
 
-                <div class="h52"></div>
+                <div class="h48"></div>
 
             </section>
 

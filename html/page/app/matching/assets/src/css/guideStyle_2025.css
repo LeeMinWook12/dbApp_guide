@@ -218,6 +218,29 @@ mark {
   color: inherit;
 }
 
+body.iframeFullpage header {
+  display: none;
+}
+body.iframeFullpage .wrap {
+  max-width: initial;
+}
+body.iframeFullpage .wrap nav.sidebar {
+  display: none;
+}
+body.iframeFullpage .wrap nav.sidebar + section {
+  margin: 0;
+}
+body.iframeFullpage .wrap nav.sidebar + section .section_title {
+  display: none;
+}
+body.iframeFullpage .wrap nav.sidebar + section .iframe_back {
+  padding: 0;
+}
+body.iframeFullpage .wrap nav.sidebar + section .iframe_back .gs_iframe {
+  height: 100vh;
+  max-width: initial;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -513,6 +536,9 @@ section .iframe_back .btn_pageFull {
   z-index: 300;
   right: 20px;
   bottom: 76px;
+}
+section .iframe_back .btn_pageFull.active {
+  background: rgba(51, 51, 51, 0.8) url("/html/page/app/matching/assets/src/images/04icon/icon_pageDefault.svg") no-repeat center;
 }
 section .titleNav {
   font-size: 40px;
@@ -931,7 +957,7 @@ pre.hljs .copy-button:hover {
   border-bottom: 1px solid #EEE;
 }
 .guide_table tr th, .guide_table tr td {
-  padding: 8px 16px;
+  padding: 10px 16px;
   color: #333;
   font-size: 16px;
   font-weight: 400;
@@ -952,4 +978,31 @@ pre.hljs .copy-button:hover {
 }
 .guide_table tbody.col_ct_1 tr td:nth-child(1) {
   text-align: center;
+}
+.guide_table tbody.col_ct_2 tr td:nth-child(2) {
+  text-align: center;
+}
+.guide_table tbody.col_ct_3 tr td:nth-child(3) {
+  text-align: center;
+}
+.guide_table tbody.col_ct_4 tr td:nth-child(4) {
+  text-align: center;
+}
+.guide_table tbody.col_ct_5 tr td:nth-child(5) {
+  text-align: center;
+}
+
+.setColorBox {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.setColorBox.border {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.setBackgroundTD + td, .setBorderTD + td {
+  line-height: 0 !important;
 }/*# sourceMappingURL=guideStyle_2025.css.map */

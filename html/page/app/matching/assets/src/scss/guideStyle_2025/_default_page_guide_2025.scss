@@ -272,7 +272,7 @@
         border-bottom: 1px solid #EEE;
 
         th, td{
-            padding: 8px 16px;
+            padding: 10px 16px;
             color: #333;
             font-size: 16px;
             font-weight: 400;
@@ -294,4 +294,17 @@
     }
 
     tbody.col_ct_1 tr td:nth-child(1){text-align: center;}
+    tbody.col_ct_2 tr td:nth-child(2){text-align: center;}
+    tbody.col_ct_3 tr td:nth-child(3){text-align: center;}
+    tbody.col_ct_4 tr td:nth-child(4){text-align: center;}
+    tbody.col_ct_5 tr td:nth-child(5){text-align: center;}
 }
+
+//컬러박스
+.setColorBox{
+    display: inline-block; width: 22px;height: 22px;border-radius: 2px; background-color: #fff;
+
+    &.border{border: 0.5px solid rgba(0, 0, 0, 0.20);}
+}
+
+.setBackgroundTD + td, .setBorderTD + td{line-height: 0 !important;}

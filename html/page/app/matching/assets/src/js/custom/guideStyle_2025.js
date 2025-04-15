@@ -351,23 +351,43 @@ $(function(){
     });
 
 
-    //전체화면 보기
+    //iframe 전체화면 토글
     $('.btn_pageFull').on('click', function() {
         
-        if($(this).hasClass('active')==true){
-            $(this).removeClass('active');
-            
-            
-        }
-
-        else{
+        if($(this).hasClass('active')==false){
             $(this).addClass('active');
-            $('header').hide();
-            $('nav.sidebar').hide();
-            
+            $('body').addClass('iframeFullpage');
+        }
+        else{
+            $(this).removeClass('active');
+            $('body').removeClass('iframeFullpage');
         }
 
     });
+});
+
+
+//테이블 표 컬러 추출
+$(function(){
+
+    //테이블 백그라운드컬러
+    $('.guide_table .setBackgroundTD').each(function(){
+
+        var $thisColor = $(this).text();
+
+        $(this).next('td').find('.setColorBox').css({ 'background-color': $thisColor });
+
+    });
+
+    //테이블 선컬러
+    $('.guide_table .setBorderTD').each(function(){
+
+        var $thisColor = $(this).text();
+
+        $(this).next('td').find('.setColorBox').css({ 'border': '0.5px solid' + $thisColor });
+
+    });
+
 });
 
 

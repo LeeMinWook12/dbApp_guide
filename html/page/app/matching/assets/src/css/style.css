@@ -3639,12 +3639,18 @@ section.viewMap {
   overflow: hidden;
 }
 section.section_center {
+  position: relative;
   margin: 0;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section.section_center .noResult {
+  position: absolute;
+  top: 80px;
+  left: 20px;
 }
 
 h2.title {
