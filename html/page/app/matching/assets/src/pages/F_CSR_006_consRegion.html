@@ -30,45 +30,70 @@
 
     <script>
 
-        $(function () {
+    $(function () {
+
+        //DEDS-304 202504
+        $(function(){
+
+            //시도 지역선택 chip
+            $('.chip_area li').each(function(){
+
+                var thisRegion = $(this).parent('.chip_area').attr('title');
+                var thisTxt = $(this).text();
+
+                $(this).click(function () {
+
+                    
+                    //region01_modal 클릭
+                    if ($(this).closest('#region01_modal').length > 0) {
 
 
-        //시도 지역선택 입력폼에 내용없으면(=지역 color_disable) 입력폼 valid 상태
-        $('.region_sel_area [class*="show-modal region"]').each(function(){
+                        //모달 breadcrumb 텍스트 변경
+                        $('[id$="_modal"]').find('.breadCb .dept01').text(thisTxt);
 
-            //비활성문자(color_disable) 없으면 폼에 내용있는 상태(bder_valid)로 변환
-            if ($(this).children('span').hasClass('color_disable') != true) {
+                        //적용하기버튼, breadcrumb dept02 버튼 클릭시
+                        $('[title=region01_apply], .breadCb .dept02').click(function(){
 
-            $(this).addClass('bder_valid');
+                            //주소필터 텍스트 변경
+                            $('.region01_evt_txt').text($('#region01_modal .dept01').text());
+                            $('.region02_evt_txt').text($('#region02_modal .dept02').text());
 
-            }
+                        });
+                        
+                    }
 
-        });
+                    //region02_modal 클릭
+                    if ($(this).closest('#region02_modal').length > 0) {
+
+                        //모달 breadcrumb 텍스트 변경
+                        $('[id$="_modal"]').find('.breadCb .dept02').text(thisTxt);
+                        
+                        //region02_modal적용하기 버튼 활성화
+                        $('[title="region01_apply"]').removeClass('btn_disable').addClass('btn_primary');
+                        $('[title="region02_apply"]').removeClass('btn_disable').addClass('btn_primary');
+
+                        $('[title=region02_apply]').click(function(){
+
+                            //주소필터 텍스트 변경
+                            $('.region01_evt_txt').text($('#region01_modal .dept01').text());
+                            $('.region02_evt_txt').removeClass('color_disable').text($('#region02_modal .dept02').text()).closest('a').removeClass('pointerEvtNone');
+
+                        });
+
+                    }
 
 
-        //시도 지역선택 chip
-        $('.chip_area li').each(function(){
+                    //버튼 활성화 클래스변경
+                    $(this).parent('.chip_area').find('li').removeClass('active');
+                    $(this).addClass('active');
 
-            var thisRegion = $(this).parent('.chip_area').attr('title');
-            var thisTxt = $(this).text();
+                });
 
-            $(this).click(function () {
-
-                //셀렉트박스 텍스트 변경
-
-                $('.region_sel_area  .show-modal.' + thisRegion + '_btn_evt').text(thisTxt).removeClass('color_disable').addClass('bder_valid');
-
-
-                //버튼 활성화 클래스변경
-                $(this).parent('.chip_area').find('li').removeClass('active');
-                $(this).addClass('active');
 
             });
 
-
         });
-
-
+        //DEDS-304 202504 end
 
 
         $(function () {
@@ -137,20 +162,22 @@
 
                 <div class="h40"></div>
 
+                <!-- DEDS-304 202504 -->
                 <div class="d-flex gap08 region_sel_area">
                     <div class="fg1">
 
                         <label class="input_label c_757575">시/도</label>
-                        <a class="input_basic fake_select show-modal region01_btn_evt">서울시</a>
+                        <a class="input_basic fake_select show-modal region01_btn_evt"><span class="region01_evt_txt">서울시</span></a>
 
                     </div>
                     <div class="fg1">
 
                         <label class="input_label c_757575">시/군/구</label>
-                        <a class="input_basic fake_select show-modal region02_btn_evt"><span class="color_disable">지역</span></a>
+                        <a class="input_basic fake_select show-modal region02_btn_evt pointerEvtNone"><span class="region02_evt_txt color_disable">지역</span></a>
 
                     </div>
                 </div>
+                <!-- DEDS-304 202504 end -->
 
             </section>
         </main>
@@ -163,6 +190,7 @@
 
         </footer>
 
+        <!-- DEDS-304 202504 -->
         <!-- 시/도 modal -->
         <div id="region01_modal" class="bottom-sheet_handle">
             <div class="sheet-overlay"></div>
@@ -174,7 +202,7 @@
                     <h4 class="modal_title">
                         <div class="breadCb">
                             <span class="dept01 active">시/도</span>
-                            <span class="dept02">시/군/구</span>
+                            <span class="dept02 show-modal region02_btn_evt close_modal">시/군/구</span>
                         </div>
                     </h4>
                     <div class="close_x close_modal"></div>
@@ -206,11 +234,14 @@
     
     
                     </ul>
-    
-    
-
+                    <div class="h40"></div>
                 </div>
 
+                <div class="modal-footer">
+                    <div class="btn_area d-flex">
+                        <a title="region01_apply" class="close_modal waves-effect btn btn-large w100p btn_disable">적용하기</a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- mr1_modal -->
@@ -226,7 +257,7 @@
                 <div class="modal_header">
                     <h4 class="modal_title">
                         <div class="breadCb">
-                            <span class="dept01 selected">서울</span>
+                            <span class="dept01 selected show-modal region01_btn_evt close_modal">시/도</span>
                             <span class="dept02 active">시/군/구</span>
                         </div>
                     </h4>
@@ -239,39 +270,39 @@
 
                     <ul title="region02" class="chip_area">
 
-                        <li class="close_modal">강남구</li>
-                        <li class="close_modal">강동구</li>
-                        <li class="close_modal">강북구</li>
-                        <li class="close_modal">강서구</li>
-                        <li class="close_modal">관악구</li>
+                        <li>전체</li>
+                        <li>강동구</li>
+                        <li>강북구</li>
+                        <li>강서구</li>
+                        <li>관악구</li>
     
-                        <li class="close_modal">광진구</li>
-                        <li class="close_modal">구로구</li>
-                        <li class="close_modal">금천구</li>
-                        <li class="close_modal">노원구</li>
-                        <li class="close_modal">창원시<br>마산합포구</li>
+                        <li>광진구</li>
+                        <li>구로구</li>
+                        <li>금천구</li>
+                        <li>노원구</li>
+                        <li>창원시<br>마산합포구</li>
     
-                        <li class="close_modal">창원시<br>일이삼사오</li>
-                        <li class="close_modal">두구</li>
-                        <li class="close_modal">구로구</li>
-                        <li class="close_modal">금천구</li>
-                        <li class="close_modal">노원구</li>
+                        <li>창원시<br>일이삼사오</li>
+                        <li>두구</li>
+                        <li>구로구</li>
+                        <li>금천구</li>
+                        <li>노원구</li>
     
-                        <li class="close_modal">강남구</li>
-                        <li class="close_modal">강동구</li>
-                        <li class="close_modal">강북구</li>
-                        <li class="close_modal">강서구</li>
-                        <li class="close_modal">관악구</li>
+                        <li>강남구</li>
+                        <li>강동구</li>
+                        <li>강북구</li>
+                        <li>강서구</li>
+                        <li>관악구</li>
     
-                        <li class="close_modal">광진구</li>
-                        <li class="close_modal">구로구</li>
-                        <li class="close_modal">금천구</li>
-                        <li class="close_modal">노원구</li>
-                        <li class="close_modal">도봉구</li>
+                        <li>광진구</li>
+                        <li>구로구</li>
+                        <li>금천구</li>
+                        <li>노원구</li>
+                        <li>도봉구</li>
     
-                        <li class="close_modal">동대문구</li>
-                        <li class="close_modal">광진구</li>
-                        <li class="close_modal">구로구</li>
+                        <li>동대문구</li>
+                        <li>광진구</li>
+                        <li>구로구</li>
     
                     </ul>
     
@@ -279,10 +310,16 @@
 
                 </div>
 
+                <div class="modal-footer">
+                    <div class="btn_area d-flex">
+                        <a title="region02_apply" class="modal-close waves-effect btn btn-large w100p close_modal btn_disable">적용하기</a>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- mr2_modal -->
-
+        <!-- DEDS-304 202504 end -->
 
 
 

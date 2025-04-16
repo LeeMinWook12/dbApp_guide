@@ -3405,6 +3405,10 @@ ul.list_dept1.marNo li {
   cursor: pointer;
 }
 
+.pointerEvtNone {
+  pointer-events: none;
+}
+
 nav a {
   color: #1A1A1A;
 }

@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 
-    <title>GUIDE_001_02_03_BackgroundColor.html</title>
+    <title>GUIDE_001_02_04_BorderColor.html</title>
 
 
     <!-- jquery -->
@@ -103,8 +103,8 @@
                                 <ul class="dept2">
                                     <li><a href="GUIDE_001_02_01_ThemeColor.html">Theme Color</a></li>
                                     <li><a href="GUIDE_001_02_02_TextColor.html">Text Color</a></li>
-                                    <li><a class="active" href="GUIDE_001_02_03_BackgroundColor.html">Background Color</a></li>
-                                    <li><a href="GUIDE_001_02_04_BorderColor.html">Border Color</a></li>
+                                    <li><a href="GUIDE_001_02_03_BackgroundColor.html">Background Color</a></li>
+                                    <li><a class="active" href="GUIDE_001_02_04_BorderColor.html">Border Color</a></li>
                                     <li><a href="GUIDE_001_02_05_IconColor.html">Icon Color</a></li>
                                 </ul>                            
                             </li>
@@ -128,12 +128,12 @@
 
                 <div class="h48"></div>
 
-                <div class="titleNav">Background Color</div>
+                <div class="titleNav">Border Color</div>
 
                 <div class="h24"></div>
  
                 <div class="raoundBox_01">
-                    배경 색상에만 사용하는 컬러입니다.  텍스트, 배경, 아이콘 색상과 중복되는 색상이 있어도 지정된 토큰 색상으로만 사용합니다.
+                    영역을 구분하는 테두리 색상입니다. 텍스트, 배경, 아이콘 색상과 중복되는 색상이 있어도 지정된 토큰 색상으로만 사용합니다.
                 </div>
 
                 <div class="h52"></div>
@@ -143,12 +143,12 @@
                 <div class="h24"></div>
 
                 <div class="raoundBox_01 flex_center">
-                    <img src="/html/page/app/matching/assets/src/images/100guide/back_07_backgroundColor.png" alt="Typeface">
+                    <img src="/html/page/app/matching/assets/src/images/100guide/back_08_borderColor.png" alt="Typeface">
                 </div>
 
                 <div class="h52"></div>
 
-                <h3 class="title fw700">Color/bg/Primitive</h3>
+                <h3 class="title fw700">Color/border/Primitive</h3>
 
                 <div class="h12"></div>
 
@@ -178,45 +178,38 @@
                     <tbody class="col_ct_5">
                         <tr>
                             <td>Primary</td>
-                            <td>브랜드 주 색상 (예시 : 버튼, 입력 폼)</td>
+                            <td>활성화 시 사용되는 테두리 색상(예시: 버튼, 입력폼)</td>
                             <td>brand/600</td>
-                            <td class="setBackgroundTD">#FF8120</td>
+                            <td class="setBorderTD">#FF8120</td>
                             <td><div class="setColorBox"></div></td>
                         </tr>
                         <tr>
                             <td>primary-press</td>
-                            <td>브랜드 주 색상 (Press, Select)</td>
+                            <td>활성화 시 사용되는 테두리 색상(강조)</td>
                             <td>brand/800</td>
-                            <td class="setBackgroundTD">#EE6002</td>
+                            <td class="setBorderTD">#EE6002</td>
                             <td><div class="setColorBox"></div></td>
                         </tr>
                         <tr>
                             <td>secondary</td>
-                            <td>컴포넌트 내 기본 블랙 색상</td>
-                            <td>neutral/200</td>
-                            <td class="setBackgroundTD">#EEEEEE</td>
-                            <td><div class="setColorBox border"></div></td>
-                        </tr>
-                        <tr>
-                            <td>secondary-press</td>
-                            <td>컴포넌트 내 기본 블랙 색상(Press, Select)</td>
+                            <td>컴포넌트 내 기본 테두리 색상 (예시 : 입력폼)</td>
                             <td>neutral/300</td>
-                            <td class="setBackgroundTD">#E0E0E0</td>
-                            <td><div class="setColorBox border"></div></td>
-                        </tr>
-                        <tr>
-                            <td>selected</td>
-                            <td>선택되었을 때 배경 색상(예시 : 버튼, 입력 폼)</td>
-                            <td>brand/50</td>
-                            <td class="setBackgroundTD">#FFF5E6</td>
-                            <td><div class="setColorBox border"></div></td>
+                            <td class="setBorderTD">#E0E0E0</td>
+                            <td><div class="setColorBox"></div></td>
                         </tr>
                         <tr>
                             <td>secondary-press</td>
-                            <td>선택되었을 때 배경 색상(Press, Select)</td>
-                            <td>brand/200</td>
-                            <td class="setBackgroundTD">#FFC77D</td>
+                            <td>활성화 시 사용하는 테두리 색상 </td>
+                            <td>neutral/500</td>
+                            <td class="setBorderTD">#999999</td>
                             <td><div class="setColorBox"></div></td>
+                        </tr>
+                        <tr>
+                            <td>inverse</td>
+                            <td>진한 배경에 이미지나, 썸네일이있을 경우 사용하는 테두리 색상</td>
+                            <td>Base/white</td>
+                            <td class="setBackgroundTD">#FFFFFF</td>
+                            <td><div class="setColorBox border"></div></td>
                         </tr>
 
                     </tbody>
@@ -226,7 +219,7 @@
 
                 <div class="h52"></div>
 
-                <h3 class="title fw700">Color/bg</h3>
+                <h3 class="title fw700">Color/border</h3>
 
                 <div class="h12"></div>
 
@@ -256,124 +249,87 @@
                     <tbody class="col_ct_5">
                         <tr>
                             <td>Primary</td>
-                            <td>기본 배경 색상</td>
-                            <td>Base/whie</td>
-                            <td class="setBackgroundTD">#FFFFFF</td>
-                            <td><div class="setColorBox border"></div></td>
+                            <td>첫번째 테두리 색상</td>
+                            <td>neutral/400</td>
+                            <td class="setBorderTD">#BDBDBD</td>
+                            <td><div class="setColorBox"></div></td>
                         </tr>
                         <tr>
                             <td>secondary</td>
-                            <td>두번째 기본 배경 색상</td>
-                            <td>neutral/50</td>
-                            <td class="setBackgroundTD">#FAFAFA</td>
-                            <td><div class="setColorBox border"></div></td>
+                            <td>두번째 테두리 색상</td>
+                            <td>neutral/200</td>
+                            <td class="setBorderTD">#EEEEEE</td>
+                            <td><div class="setColorBox"></div></td>
                         </tr>
                         <tr>
                             <td>teritiary</td>
-                            <td>
-                                목록과 유사한 구성 항목의 구분에 대한 배경 색상<br>
-                                (예시 : 푸터, 카드UI 내 배경)
-                            </td>
+                            <td>세번째 테두리 색상</td>
                             <td>neutral/100</td>
-                            <td class="setBackgroundTD">#616161</td>
-                            <td><div class="setColorBox border"></div></td>
-                        </tr>
-                        <tr> 
-                            <td>point-bold</td>
-                            <td>브랜드 색상 중 연한 배경 색상</td>
-                            <td>brand/100</td>
-                            <td class="setBackgroundTD">#FFECB3</td>
-                            <td><div class="setColorBox border"></div></td>
-                        </tr>
-                        <tr> 
-                            <td>point-subtle</td>
-                            <td>브랜드 색상 중 가장 연한 배경 색상</td>
-                            <td>brand/50</td>
-                            <td class="setBackgroundTD">#FFF5E6</td>
-                            <td><div class="setColorBox border"></div></td>
-                        </tr>
-                        <tr> 
-                            <td>brand-sub-bold</td>
-                            <td>브랜드 색상 외 강조 하는 배경 강조 색상</td>
-                            <td>brandSub/900</td>
-                            <td class="setBackgroundTD">#10185C</td>
+                            <td class="setBorderTD">#F5F5F5</td>
                             <td><div class="setColorBox"></div></td>
                         </tr>
-                        <tr> 
-                            <td>brand-sub-subtle</td>
-                            <td>브랜드 색상 외 강조 하는 배경 색상 (예시: 배너색상)</td>
-                            <td>brandSub/50</td>
-                            <td class="setBackgroundTD">#EFF1FD</td>
-                            <td><div class="setColorBox border"></div></td>
-                        </tr>
-                        <tr> 
-                            <td>info-bold</td>
-                            <td>뱃지, 정보 등 신뢰 강조 색상</td>
-                            <td>Infomation/700</td>
-                            <td class="setBackgroundTD">#1D4ED8</td>
+                        <tr>
+                            <td>info</td>
+                            <td>뱃지, 정보 등 신뢰 색상</td>
+                            <td>Infomation/600</td>
+                            <td class="setBorderTD">#1477F8</td>
                             <td><div class="setColorBox"></div></td>
                         </tr>
-                        <tr> 
+                        <tr>
                             <td>info-subtle</td>
-                            <td>뱃지, 정보 등 신뢰 색상 (예시: 배너색상)</td>
-                            <td>Infomation/50</td>
-                            <td class="setBackgroundTD">#EFF6FF</td>
-                            <td><div class="setColorBox border"></div></td>
-                        </tr>
-                        <tr> 
-                            <td>success-bold</td>
-                            <td>완료 및 성공 강조 색상</td>
-                            <td>success/700</td>
-                            <td class="setBackgroundTD">#15803D</td>
+                            <td>뱃지, 정보 등 신뢰 색상_서브</td>
+                            <td>Infomation/100</td>
+                            <td class="setBorderTD">#DBEAFE</td>
                             <td><div class="setColorBox"></div></td>
                         </tr>
-                        <tr> 
+                        <tr>
+                            <td>success</td>
+                            <td>완료 및 성공 색상(예시: 입력폼)</td>
+                            <td>success/600</td>
+                            <td class="setBorderTD">#43A047</td>
+                            <td><div class="setColorBox"></div></td>
+                        </tr>
+                        <tr>
                             <td>success -subtle</td>
-                            <td>완료 및 성공 색상(예시: 배너색상)</td>
-                            <td>success/50</td>
-                            <td class="setBackgroundTD">#E8F5E9</td>
-                            <td><div class="setColorBox border"></div></td>
+                            <td>완료 및 성공 색상_서브</td>
+                            <td>success/100</td>
+                            <td class="setBorderTD">#C8E6C9</td>
+                            <td><div class="setColorBox"></div></td>
                         </tr>
-                        <tr> 
+                        <tr>
                             <td>danger-bold</td>
-                            <td>주의 및 에러 강조 색상(Select)</td>
+                            <td>주의 및 에러 색상(예시: 입력폼)</td>
                             <td>danger/800</td>
-                            <td class="setBackgroundTD">#D32F2F</td>
+                            <td class="setBorderTD">#1E40AF</td>
                             <td><div class="setColorBox"></div></td>
                         </tr>
-                        <tr> 
+                        <tr>
                             <td>danger-subtle</td>
-                            <td>주의 및 에러 색상(예시: 배너색상)</td>
-                            <td>danger/50</td>
-                            <td class="setBackgroundTD">#FFEBEE</td>
-                            <td><div class="setColorBox border"></div></td>
-                        </tr>
-                        <tr> 
-                            <td>inverse-bold</td>
-                            <td>기본 배경색상 반전색상 </td>
-                            <td>neutral/800</td>
-                            <td class="setBackgroundTD">#333333</td>
+                            <td>주의 및 에러 색상_서브</td>
+                            <td>danger/100</td>
+                            <td class="setBorderTD">#FFCDD2</td>
                             <td><div class="setColorBox"></div></td>
                         </tr>
-                        <tr> 
-                            <td>inverse-bolder</td>
-                            <td>기본 배경색상 반전 강조 색상 (Press, Select)</td>
-                            <td>neutral/900</td>
-                            <td class="setBackgroundTD">#1A1A1A</td>
-                            <td><div class="setColorBox"></div></td>
-                        </tr>
-                        <tr> 
+                        <tr>
                             <td>disabled</td>
                             <td>비활성화 색상</td>
-                            <td>neutral/200</td>
-                            <td class="setBackgroundTD">#EEEEEE</td>
+                            <td>neutral/400</td>
+                            <td class="setBorderTD">#BDBDBD</td>
                             <td><div class="setColorBox"></div></td>
                         </tr>
+                        <tr>
+                            <td>base</td>
+                            <td>가장 진한 테두리 색상</td>
+                            <td>base/black</td>
+                            <td class="setBorderTD">#111111</td>
+                            <td><div class="setColorBox"></div></td>
+                        </tr>
+                        
                         
 
                     </tbody>
                 </table>
-                
+dfdfdf                
 
                 <div class="h48"></div>
 
