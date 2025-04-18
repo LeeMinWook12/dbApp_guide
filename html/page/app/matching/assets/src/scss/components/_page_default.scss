@@ -689,9 +689,11 @@ h5.title{
 
 
 
+.bottom-sheet_handle .modal_title:has(.breadCb){width: calc(100% - 50px);}
 
 //Breadcrumbs
 .breadCb{
+    display: flex;
 
     > span{
         color: $--Color-text-disabled;
@@ -699,6 +701,8 @@ h5.title{
 
         position: relative;
         padding: 14px 16px;
+
+        &.dept01{flex-shrink: 0;}
 
         &.active{
 
@@ -719,6 +723,12 @@ h5.title{
 
             background: url('../images/04icon/chevron-right_thin_disable.svg') no-repeat left center;
             background-size: 16px;
+            
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
 
         }
     

@@ -4332,6 +4332,13 @@ h5.title {
   border-image: url("../images/99temp/image_slice_02.svg") 24 23 27 23 fill stretch;
 }
 
+.bottom-sheet_handle .modal_title:has(.breadCb) {
+  width: calc(100% - 50px);
+}
+
+.breadCb {
+  display: flex;
+}
 .breadCb > span {
   color: #BDBDBD;
   font-size: 18px !important;
@@ -4340,6 +4347,9 @@ h5.title {
   letter-spacing: -0.27px;
   position: relative;
   padding: 14px 16px;
+}
+.breadCb > span.dept01 {
+  flex-shrink: 0;
 }
 .breadCb > span.active {
   color: #FF8120;
@@ -4351,6 +4361,10 @@ h5.title {
   padding: 14px 16px 14px 32px;
   background: url("../images/04icon/chevron-right_thin_disable.svg") no-repeat left center;
   background-size: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .chip_area {
