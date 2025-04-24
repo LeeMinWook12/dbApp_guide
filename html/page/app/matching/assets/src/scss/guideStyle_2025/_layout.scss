@@ -284,8 +284,8 @@ header{
                     border-bottom: 1px solid #E0E0E0;
 
 
-                    &.active{
-                        
+                    &.active:not(.arrow){
+                        border-bottom: 2px solid #10185C;
                     }
                 }
                 

@@ -5327,6 +5327,17 @@ h5.title {
   letter-spacing: -0.24px !important;
 }
 
+.progress.default {
+  height: 16px;
+  background-color: #EEEEEE;
+  border-radius: 100px;
+  margin: 0;
+}
+.progress.default .progress-bar {
+  height: 16px;
+  border-radius: 100px;
+  background: linear-gradient(146deg, #FF8120 21.95%, #E54304 82.84%);
+}
 .progress.thin {
   height: 4px;
   background-color: #EEEEEE;

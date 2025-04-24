@@ -436,6 +436,9 @@ nav.sidebar .sidebar_list ul.dept1 > li > a {
   padding: 16px 8px;
   border-bottom: 1px solid #E0E0E0;
 }
+nav.sidebar .sidebar_list ul.dept1 > li > a.active:not(.arrow) {
+  border-bottom: 2px solid #10185C;
+}
 nav.sidebar .sidebar_list ul.dept2 {
   margin: 8px 0;
 }

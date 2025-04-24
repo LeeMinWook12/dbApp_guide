@@ -1816,6 +1816,20 @@ h5.title{
 
 .progress{
 
+    &.default{
+        height: 16px;
+        background-color: $--Color-bg-Primitive-secondary;
+        border-radius: 100px;
+        margin: 0;
+
+        .progress-bar{
+            height: 16px;
+            border-radius: 100px;
+            background: linear-gradient(146deg, #FF8120 21.95%, #E54304 82.84%);        
+        }
+
+    }
+
     &.thin{
         height: 4px;
         background-color: $--Color-bg-Primitive-secondary;
