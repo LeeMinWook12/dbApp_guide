@@ -35,7 +35,7 @@
 
         /* toast */
         #toast-container{bottom: 80px;}
-        
+
     </style>
 
 
@@ -125,6 +125,27 @@
 
 
 
+    </script>
+
+
+    <script>
+        //카카오지도 말풍선 스타일
+        $(function(){
+
+            $('.kakaoMap_area div[style*="border: 1px solid rgb(118, 129, 168)"]').each(function(){
+                $(this).css({
+                    'display' : 'flex',
+                    'justify-content' : 'center',
+                    'align-items' : 'center',
+                    'padding':'12px',
+                    'border-radius' : '8px',
+                    'border' : '1px solid #333',
+                    'background' : '#fff',
+                    'box-shadow': '0px 2px 4px 0px rgba(0, 0, 0, 0.20)',
+                }).children('div[style*="left: 0px"]').removeAttr('style');
+            });
+
+        });
     </script>
 
 
@@ -667,6 +688,14 @@
                         <div class="h20"></div>
 
                         <div class="kakaoMap_area">
+
+                            <!-- 카카오맵 말풍선 예시 -->
+                            <div style="position: absolute; cursor: default; background: rgb(255, 255, 255); border: 1px solid rgb(118, 129, 168); z-index: 0; display: block; width: 150px; height: 23px; left: 205px; top: 34px;">
+                                <div style="position: absolute;width: 11px; height: 9px; background: url(&quot;https://t1.daumcdn.net/localimg/localimages/07/mapjsapi/triangle.png&quot;) 0% 0% / 11px 9px no-repeat; left: 69px; top: 23px;"></div>
+                                <div style="position: absolute; left: 0px; top: 0px;" class="">
+                                    <div class="custom-info-window">네이처요양병원예시툴팁</div>
+                                </div>
+                            </div>
 
                             <!-- * 카카오맵 - 지도퍼가기 -->
                             <!-- 1. 지도 노드 -->

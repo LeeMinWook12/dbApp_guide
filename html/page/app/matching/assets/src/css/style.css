@@ -2563,6 +2563,10 @@ hr.color_gray {
   background-color: #EEEEEE !important;
 }
 
+.back_E0E0E0 {
+  background-color: #E0E0E0 !important;
+}
+
 .back_E8F5E9 {
   background-color: #E8F5E9 !important;
 }
@@ -8141,6 +8145,10 @@ h5.title {
 }
 .map_tooltip.active::after {
   background: url("../images/18icon/tooltip_tail_active.svg") no-repeat center;
+}
+
+div[style*=z-index]:has(> .map_tooltip.active) {
+  z-index: 100000000 !important;
 }
 
 .map_tool_dept {

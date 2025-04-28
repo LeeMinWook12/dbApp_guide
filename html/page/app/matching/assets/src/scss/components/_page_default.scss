@@ -5104,6 +5104,11 @@ h5.title{
     
 }
 
+//카카오지도 요양원 말풍선 클릭시 상단으로
+div[style*='z-index']:has(>.map_tooltip.active) {z-index: 100000000 !important;}
+
+
+
 .map_tool_dept{
     height: 40px;
 
