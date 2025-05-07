@@ -2576,6 +2576,21 @@ h5.title{
         }
 
 
+
+        &.trans_s01{
+            background-image: url('../images/06trans/trans_s01.svg');
+        }
+
+        &.trans_s02{
+            background-image: url('../images/06trans/trans_s02.svg');
+        }
+
+        &.trans_s03{
+            background-image: url('../images/06trans/trans_s03.svg');
+        }
+
+
+
         &.ing{
             background-color: $--Color-bg-brand-sub-bold;
             
@@ -2585,7 +2600,7 @@ h5.title{
         }
 
 
-        & + div{padding-right: 20px;}
+        & + div{padding-right: 14px;/*20px;*/}
         
         .txt{
             width:100%;

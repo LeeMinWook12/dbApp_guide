@@ -3561,7 +3561,7 @@ nav.top .icon_area {
   background-image: url("../images/04icon/wel_off.svg");
 }
 .page-footer.bottomNav .bottomNav_menu li.btn_service a {
-  background-image: url("../images/04icon/sevice_off.svg");
+  background-image: url("../images/04icon/sevice02_off.svg");
 }
 .page-footer.bottomNav .bottomNav_menu li.btn_guide a {
   background-image: url("../images/04icon/content_off.svg");
@@ -5966,6 +5966,15 @@ h5.title {
 .box_coun_list .img_area.trans_02 {
   background-image: url("../images/06trans/trans_02.svg");
 }
+.box_coun_list .img_area.trans_s01 {
+  background-image: url("../images/06trans/trans_s01.svg");
+}
+.box_coun_list .img_area.trans_s02 {
+  background-image: url("../images/06trans/trans_s02.svg");
+}
+.box_coun_list .img_area.trans_s03 {
+  background-image: url("../images/06trans/trans_s03.svg");
+}
 .box_coun_list .img_area.ing {
   background-color: #10185C;
 }
@@ -5973,7 +5982,7 @@ h5.title {
   background-color: #333333;
 }
 .box_coun_list .img_area + div {
-  padding-right: 20px;
+  padding-right: 14px; /*20px;*/
 }
 .box_coun_list .img_area .txt {
   width: 100%;
