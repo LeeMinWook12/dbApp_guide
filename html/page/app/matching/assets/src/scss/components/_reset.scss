@@ -229,6 +229,7 @@ $--Color-icon-Primitive-inverse: #fff;
     line-height: 27px; /* 150% */
     letter-spacing: -0.27px;
     text-decoration-line: underline;
+    text-underline-offset:15%;
 }
 
 @mixin Suit_Body_MD_Strike-through{
@@ -270,6 +271,7 @@ $--Color-icon-Primitive-inverse: #fff;
     line-height: 24px; /* 150% */
     letter-spacing: -0.15px;
     text-decoration-line: underline;
+    text-underline-offset:15%;
 }
 
 

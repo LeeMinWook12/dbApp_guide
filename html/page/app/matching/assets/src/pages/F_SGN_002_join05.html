@@ -19,6 +19,10 @@
   <!-- guide.js -->
   <script type="text/javascript" src="../js/custom/guide.js"></script>
 
+  <!-- 202505 DP2025-78 -->
+  <!-- bottom_sheet.js -->
+  <script type="text/javascript" src="../js/custom/script_bottom_sheet_pb.js" defer></script>
+
   <!-- materialize CSS -->
   <link rel="stylesheet" href="../css/materialize.min.css" />
 
@@ -108,7 +112,9 @@
           <div class="l_right">
             <a class="waves-effect btn btn_cancel">인증번호 재전송</a>
           </div>
-          
+
+          <br><br>
+          <a class="fs16 color_t_success modal-trigger" href="#modal3"><u>위치기반약관동의_바텀시트 클릭!</u></a>
 
 
 
@@ -125,7 +131,8 @@
       <div class="btn_area d-flex f-column">
 
         <div class="relative">
-          <a class="waves-effect btn-large btn_primary w100p modal-trigger" href="#modal_memConsent">본인인증하기</a>
+          <!-- 202505 DP2025-78 -->
+          <a class="waves-effect btn-large btn_primary w100p show-modal region01_btn_evt">본인인증하기</a>
         </div>
       </div>
 
@@ -161,113 +168,151 @@
 
 
 
-    <!-- Modal modal_broad -->
-    <div id="modal_memConsent" class="modal bottom-sheet">
+    <!-- 202505 DP2025-78 -->
+    <!-- modal modal_broad -->
+    <div id="region01_modal" class="bottom-sheet_handle">
+        <div class="sheet-overlay"></div>
+        <div class="content">
+            <div class="drag_handle_area drag-icon">
+                <span class="drag_handle"></span>
+            </div>
+            <div class="modal_header">
+                <h4 class="modal_title">본인인증을 위해 동의가 필요해요
+                </h4>
+                <div class="close_x close_modal"></div>
+            </div>
 
-      <div class="modal_header">
-        <h4 class="modal_title">인증을 위해 동의가 필요해요</h4>
-        <div class="close_x modal-close waves-effect"></div>
-      </div>
+            <div class="pad020">
+                <input type="checkbox" name="" id="chk_join_t" class="chk02 large border_gray total_evt">
+                <label for="chk_join_t">전체 동의하기</label>
+                <div class="h20"></div>
+            </div>
+            <div class="modal-content">
 
-      <div class="modal-content">
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j01" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j01">[필수] 휴대폰본인인증서비스 개인정보이용동의</label>
+                    </div>
+                </div>
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j02" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j02">[필수] 휴대폰본인인증서비스 고유식별정보처리동의</label>
+                    </div>
+                </div>
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j03" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j03">[필수] 휴대폰 본인인증서비스 서비스이용약관동의</label>
+                    </div>
+                </div>
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j04" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j04">[필수]휴대폰본인인증서비스 통신사이용약관동의</label>
+                    </div>
+                </div>
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j05" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j05">[필수] 이로움ON 이용약관</label>
+                    </div>
+                </div>
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j06" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j06">[필수] 이로움ON 개인정보처리방침</label>
+                    </div>
+                </div>
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j07" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j07">[필수] 만 14세 이상입니다</label>
+                    </div>
+                </div>
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j08" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j08">[선택] 이벤트 및 마케팅 정보 수신 동의</label>
+                    </div>
+                </div>
+                <div class="group_chk_area">
+                    <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                    <div>
+                        <input type="checkbox" name="" id="chk_j09" class="chk01_2 large total_evt_sub">
+                        <label for="chk_j09">[선택] 야간 혜택 수신 동의</label>
+                    </div>
+                </div>
 
-        <input type="checkbox" name="" id="chk_join_t" class="chk02 large border_gray total_evt">
-        <label for="chk_join_t">전체 동의하기</label>
+                <div class="h20"></div>
 
-        <div class="h20"></div>
 
-        <div class="scrollBox">
 
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j01" class="chk01_2 large total_evt_sub">
-              <label for="chk_j01">[필수] 개인정보이용동의</label>
-            </div>
-          </div>
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j02" class="chk01_2 large total_evt_sub">
-              <label for="chk_j02">[필수] 고유식별정보처리동의</label>
-            </div>
-          </div>
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j03" class="chk01_2 large total_evt_sub">
-              <label for="chk_j03">[필수] 서비스이용약관동의</label>
-            </div>
-          </div>
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j04" class="chk01_2 large total_evt_sub">
-              <label for="chk_j04">[필수] 통신사이용약관동의</label>
-            </div>
-          </div>
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j05" class="chk01_2 large total_evt_sub">
-              <label for="chk_j05">[필수] 이로움ON 이용약관</label>
-            </div>
-          </div>
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j06" class="chk01_2 large total_evt_sub">
-              <label for="chk_j06">[필수] 이로움ON 개인정보처리방침</label>
-            </div>
-          </div>
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j07" class="chk01_2 large total_evt_sub">
-              <label for="chk_j07">[필수] 만 14세 이상입니다</label>
-            </div>
-          </div>
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j08" class="chk01_2 large total_evt_sub">
-              <label for="chk_j08">[선택] 이벤트 및 마케팅 정보 수신 동의</label>
-            </div>
-          </div>
-          <div class="group_chk_area">
-            <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
-            <div>
-              <input type="checkbox" name="" id="chk_j09" class="chk01_2 large total_evt_sub">
-              <label for="chk_j09">[선택] 야간 혜택 수신 동의</label>
-            </div>
-          </div>
 
-          <div class="h20"></div>
+            </div>
 
+            <div class="modal-footer">
+                <div class="btn_area d-flex">
+                    <a title="region01_apply" class="close_modal waves-effect btn btn-large w100p">동의하기</a>
+                </div>
+            </div>
 
         </div>
-        <!-- scrollBox -->
+    </div>
+    <!-- mr1_modal -->
 
 
 
-      <script>
-        //토스트
-        // M.toast({
-        //   html: '본인 인증이 완료되었어요',
-        //   //outDuration: 375
-        // })
-      </script>
- 
-      </div>
-      <!-- modal-content -->
-      <div class="modal-footer">
-        <div class="btn_area d-flex">
-          <a class="modal-close waves-effect btn btn-large w100p btn_primary" onclick="M.toast({html: '본인 인증이 완료되었어요'})">확인</a>
+
+    <!-- Modal 하단모달 -->
+    <div id="modal3" class="modal bottom-sheet">
+
+        <div class="modal_header">
+            <h4 class="modal_title">약관 동의가 필요해요</h4>
+            <div class="close_x modal-close waves-effect"></div>
         </div>
-      </div>
+
+        <div class="modal-content">
+
+            <div class="color_t_s font_sbmr">
+                본 기능은 위치정보 기반으로 제공되며, 약관 동의 후, 이용 가능합니다.
+            </div>
+
+            <div class="h20"></div>
+
+            <div class="group_chk_area">
+                <span class="icon_btn i_right waves-effect modal-trigger" data-target="modal_fullsreen"></span>
+                <div>
+                    <input type="checkbox" name="" id="chk_hj01" class="chk01_2 large total_evt_sub" checked>
+                    <label for="chk_hj01">[필수] 위치기반 서비스 이용약관</label>
+                </div>
+            </div>
+
+            <div class="h32"></div>
+
+        </div>
+
+        <!-- modal-content -->
+        <div class="modal-footer">
+            <div class="btn_area d-flex">
+                <a class="modal-close waves-effect btn btn-large w100p btn_primary">동의하기</a>
+            </div>
+        </div>
 
     </div>
-    <!-- modal_broad -->
+
+
+    <!-- 202505 DP2025-78 end -->
+
 
 
 

@@ -1018,7 +1018,57 @@ pre.hljs .copy-button:hover {
   grid-template-rows: 1fr 1fr;
   gap: 1px;
 }
+.grid_container.H1W2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+.grid_container.H1W3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+.grid_container.H1W4 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
 .grid_container .item {
+  position: relative;
   background: #f5f5f5;
-  height: 140px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid_container .item .f_head {
+  position: absolute;
+}
+.grid_container .item .f_head.num {
+  top: 16px;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  border-radius: 99px;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid_container .item .f_head.text {
+  top: 12px;
+  left: 16px;
+  color: #616161;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important; /* 150% */
+  letter-spacing: -0.24px !important;
+}
+
+.hAuto {
+  height: auto !important;
+}
+
+.h170 {
+  height: 170px !important;
 }/*# sourceMappingURL=guideStyle_2025.css.map */

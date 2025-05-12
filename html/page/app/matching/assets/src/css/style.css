@@ -382,6 +382,10 @@ nav .sidenav-trigger {
   justify-content: space-between;
 }
 
+.align-items-start {
+  align-items: start !important;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -2271,6 +2275,7 @@ hr.color_gray {
   line-height: 27px; /* 150% */
   letter-spacing: -0.27px;
   text-decoration-line: underline;
+  text-underline-offset: 15%;
 }
 
 .font_sbmst {
@@ -2309,6 +2314,7 @@ hr.color_gray {
   line-height: 24px; /* 150% */
   letter-spacing: -0.15px;
   text-decoration-line: underline;
+  text-underline-offset: 15%;
 }
 
 .font_ssb {
@@ -2435,6 +2441,7 @@ hr.color_gray {
   line-height: 27px; /* 150% */
   letter-spacing: -0.27px;
   text-decoration-line: underline;
+  text-underline-offset: 15%;
 }
 
 .font_18_5 {
