@@ -166,6 +166,7 @@ nav .sidenav-trigger{
 .w100p{width:100% !important;}
 .w50p{width:50% !important;}
 
+//width 10~100%
 @for $i from 1 through 10{
     .w#{$i}0p{width: #{$i * 10}+'%' !important;}
 }
@@ -213,8 +214,13 @@ nav .sidenav-trigger{
 .h67{height: 67px !important;}
 .h75{height: 75px !important;}
 .h80{height: 80px !important;}
-.h100{height: 100px !important;}
-.h160{height: 160px !important;}
+
+//height : h100~h200
+@for $i from 110 through 200 {
+    @if $i % 10 == 0{
+        .h#{$i}{height: #{$i}px !important;}
+    }
+}
 
 .noPad, .padNo{padding: 0 !important;}
 

@@ -962,12 +962,44 @@ nav .sidenav-trigger {
   height: 80px !important;
 }
 
-.h100 {
-  height: 100px !important;
+.h110 {
+  height: 110px !important;
+}
+
+.h120 {
+  height: 120px !important;
+}
+
+.h130 {
+  height: 130px !important;
+}
+
+.h140 {
+  height: 140px !important;
+}
+
+.h150 {
+  height: 150px !important;
 }
 
 .h160 {
   height: 160px !important;
+}
+
+.h170 {
+  height: 170px !important;
+}
+
+.h180 {
+  height: 180px !important;
+}
+
+.h190 {
+  height: 190px !important;
+}
+
+.h200 {
+  height: 200px !important;
 }
 
 .noPad, .padNo {
