@@ -216,7 +216,7 @@ nav .sidenav-trigger{
 .h80{height: 80px !important;}
 
 //height : h100~h200
-@for $i from 110 through 200 {
+@for $i from 100 through 220 {
     @if $i % 10 == 0{
         .h#{$i}{height: #{$i}px !important;}
     }

@@ -962,6 +962,10 @@ nav .sidenav-trigger {
   height: 80px !important;
 }
 
+.h100 {
+  height: 100px !important;
+}
+
 .h110 {
   height: 110px !important;
 }
@@ -1000,6 +1004,14 @@ nav .sidenav-trigger {
 
 .h200 {
   height: 200px !important;
+}
+
+.h210 {
+  height: 210px !important;
+}
+
+.h220 {
+  height: 220px !important;
 }
 
 .noPad, .padNo {

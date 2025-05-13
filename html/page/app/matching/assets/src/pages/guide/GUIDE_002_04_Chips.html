@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 
-    <title>GUIDE_002_02_SelectionControls.html</title>
+    <title>GUIDE_002_04_Chips.html</title>
 
 
     <!-- jquery -->
@@ -84,9 +84,9 @@
                     <div class="tab_list dept_app" title="siteMap_guide">
                         <ul class="dept1">
                             <li><a href="GUIDE_002_Component.html">Button</a></li>
-                            <li><a class="active" href="GUIDE_002_02_SelectionControls.html">Selection Controls</a></li>
+                            <li><a href="GUIDE_002_02_SelectionControls.html">Selection Controls</a></li>
                             <li><a href="GUIDE_002_03_Link.html">Link</a></li>
-                            <li><a href="GUIDE_002_04_Chips.html">Chips</a></li>
+                            <li><a class="active" href="GUIDE_002_04_Chips.html">Chips</a></li>
                             <li><a href="GUIDE_002_05_TextField.html">TextField</a></li>
                             
                             <li><a href="GUIDE_002_06_SelectField.html">SelectField</a></li>
@@ -121,13 +121,12 @@
 
                 <div class="h48"></div>
 
-                <div class="titleNav">Selection Controls</div>
+                <div class="titleNav">Chips</div>
 
                 <div class="h24"></div>
  
                 <div class="raoundBox_01">
-                    셀렉션 컨트롤(Selection Controls)은 사용자가 선택 옵션들을 제어할 수 있도록 돕는 컴포넌트입니다.
-                    다중선택을 위한 체크 박스, 다수의 옵션 중 하나의 선택을 위한 라디오 버튼, 효과 전환을 위한 토글 스위치로 나눕니다.
+                    칩(Chips)은 사용자에게 제공해야 하는 입력 데이터, 필터 옵션, 기능을 상황에 따라 가변적으로 제공하여 작업 수행을 돕는 컴포넌트입니다.
                 </div>
 
                 <div class="h52"></div>
@@ -136,34 +135,17 @@
 
                 <div class="h24"></div>
 
-                <div class="raoundBox_01 noPad back_E0E0E0">
-                    <div class="grid_container H1W3">
-                        <div class="item">
-                            <div class="infoFix">
-                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_11_01_sc.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="infoFix">
-                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_11_02_sc.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="infoFix">
-
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_11_03_sc.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <div class="raoundBox_01 flex_center h170">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_25_01_chips.svg" alt="">
                 </div>
 
                 <div class="h16"></div>
 
                 <ul class="d-flex gap16 color_t_s font_ssr">
-                    <li>1. Container </li>
-                    <li>2. Mark</li>
-                    <li>3. Track</li>
-                    <li>4. Thumb</li>
+                    <li>1. Container</li>
+                    <li>2. Leading Icon(옵션)</li>
+                    <li>3. Text Label</li>
+                    <li>4. Trailing Icon(옵션)</li>
                 </ul>
 
 
@@ -171,185 +153,237 @@
 
                 <h3 class="title fw700">Type, 종류</h3>
                 
-                <div class="h24"></div>
-
-                <h5 class="title fw700">1.Checkbox</h5>
-
-                <div class="h08"></div>
-
-                <div class="color_tp_s font_sbmr">
-                    체크박스는 제공된 옵션 항목 중 한 개 이상 선택할 수 있을 때 사용합니다.
-                </div>
-
-                <div class="h16"></div>
-
-                <div class="raoundBox_01 noPad flex_center align-items-start">
-                    <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_12_01_sc.svg" alt="">
-                </div>
-
-                <div class="h32"></div>
-
-                <h5 class="title fw700">2.Radio button</h5>
-
-                <div class="h08"></div>
-
-                <div class="color_tp_s font_sbmr">
-                    라디오 버튼은 제공된 옵션 항목 중 한개만 선택할 수 있을 때 사용합니다.
-                </div>
-
-                <div class="h16"></div>
-
-                <div class="raoundBox_01 noPad flex_center align-items-start">
-                    <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_13_01_sc.svg" alt="">
-                </div>
-
-                <div class="h32"></div>
-
-                <h5 class="title fw700">3.Switch</h5>
-
-                <div class="h08"></div>
-
-                <div class="color_tp_s font_sbmr">
-                    스위치는 제공된 화면의 설정을 켜거나 끌 때 사용합니다. 
-                </div>
-
-                <div class="h16"></div>
-
-                <div class="raoundBox_01 noPad flex_center align-items-start">
-                    <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_14_01_sc.svg" alt="">
-                </div>
-
-                <div class="h52"></div>
-
-                <h3 class="title fw700">State, 상태</h3>
-                
-                <div class="h24"></div>
-
-                <h5 class="title fw700">1.Checkbox</h5>
-
-                <div class="h16"></div>
-
-                <div class="raoundBox_01 flex_center">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_15_01_sc.svg" alt="">
-                </div>
-
-                <div class="h24"></div>
-
-                <div class="font_sbms">Table of Figma Propertie, 피그마 속성</div>
-
-                <div class="h24"></div>
-
-                <table class="guide_table">
-                    <colgroup>
-                        <col>
-                        <col>
-                        <col>
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>Property</th>
-                            <th>Values</th>
-                            <th>Default Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">State</span></td>
-                            <td>Default, Pressed, Disabled</td>
-                            <td>Default</td>
-                        </tr>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">Selected</span></td>
-                            <td>True, False</td>
-                            <td>False</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="h32"></div>
-
-                <h5 class="title fw700">2.Radio button</h5>
-
-                <div class="h16"></div>
-                
-                <div class="raoundBox_01 flex_center">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_16_01_sc.svg" alt="">
-                </div>
-
-                <div class="h24"></div>
-
-                <div class="font_sbms">Table of Figma Propertie, 피그마 속성</div>
-
-                <div class="h24"></div>
-
-                <table class="guide_table">
-                    <colgroup>
-                        <col>
-                        <col>
-                        <col>
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>Property</th>
-                            <th>Values</th>
-                            <th>Default Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">State</span></td>
-                            <td>Default, Pressed, Disabled</td>
-                            <td>Default</td>
-                        </tr>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">Selected</span></td>
-                            <td>True, False</td>
-                            <td>False</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="h32"></div>
-
-                <h5 class="title fw700">3.Switch</h5>
-
-                <div class="h16"></div>
-
-                <div class="raoundBox_01 flex_center h180">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_17_01_sc.svg" alt="">
-                </div>
-
-                <div class="h52"></div>
-
-                <h3 class="title fw700">Spec, 제작가이드</h3>
-
                 <div class="h12"></div>
 
                 <div class="color_tp_s font_sbmr">
-                    체크박스, 라디오버튼 사이즈는 최소 20x20px, 스위치는 최소 36px를, 세로 사이즈는 최소 20px를 사용합니다. 
+                    Option Chips는 칩을 선택해도 페이지가 이동하지 않고, 선택한 값은 즉시 시각적으로 반영(Active)되지만, 실제 저장은 ‘완료’ 버튼을 눌러야 적용됩니다.<br>
+                    Filter Chips는 칩을 선택하면 바로 필터가 적용되어 화면 데이터가 즉시 바뀌는 방식입니다.
+                </div>
+                
+                <div class="h24"></div>
+
+                <div class="raoundBox_01 noPad back_E0E0E0">
+                    <div class="grid_container H1W2">
+                        <div class="item">
+                            <div class="infoFix">
+                                <span class="f_head text">Option Chips</span>
+                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_26_01_chips.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="infoFix">
+                                <span class="f_head text">Filter Chips</span>
+                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_26_02_chips.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+
+                <div class="h52"></div>
+
+                <h3 class="title fw700">Size, 크기</h3>
+                
                 <div class="h24"></div>
 
                 <div class="raoundBox_01 noPad back_E0E0E0">
                     <div class="grid_container H1W3">
                         <div class="item">
                             <div class="infoFix">
-                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_18_01_sc.svg" alt="">
+                                <span class="f_head text">24px</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_26_01_chips.svg" alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="infoFix">
-                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_18_02_sc.svg" alt="">
+                                <span class="f_head text">20px</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_27_02_chips.svg" alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="infoFix">
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_18_03_sc.svg" alt="">
+                                <span class="f_head text">16px</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_27_03_chips.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+                <div class="h52"></div>
+
+                <h3 class="title fw700">Weight, 굵기</h3>
+                
+                <div class="h24"></div>
+
+                <div class="raoundBox_01 noPad back_E0E0E0">
+                    <div class="grid_container H1W3">
+                        <div class="item">
+                            <div class="infoFix">
+                                <span class="f_head text">Bold(24/20pt에서만 사용)</span>
+                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_23_01_link.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="infoFix">
+                                <span class="f_head text">SemiBold</span>
+                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_23_02_link.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="infoFix">
+                                <span class="f_head text">Regular</span>
+                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/back_comp_23_03_link.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h52"></div>
+
+                <h3 class="title fw700">State, 상태</h3>
+
+                <div class="h24"></div>
+
+                <h5 class="title fw700">1.Option Chips</h5>
+
+                <div class="h16"></div>
+
+                <div class="raoundBox_01 flex_center h220">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_28_01_chips.svg" alt="">
+                </div>
+
+                <div class="h24"></div>
+
+                <div class="font_sbms">Table of Figma Propertie, 피그마 속성</div>
+
+
+                <div class="h24"></div>
+
+                <table class="guide_table">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Values</th>
+                            <th>Default Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">State</span></td>
+                            <td>Default, Pressed, Disabled</td>
+                            <td>Default</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">Selected</span></td>
+                            <td>On, Off</td>
+                            <td>Off</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">Size</span></td>
+                            <td>56px, 48px</td>
+                            <td>56px</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">Leading Icon</span></td>
+                            <td>True, False</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">Trailing Icon</span></td>
+                            <td>True, False</td>
+                            <td>False</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="h32"></div>
+
+                <h5 class="title fw700">2.Filter Chips</h5>
+                
+                <div class="h16"></div>
+
+                <div class="raoundBox_01 flex_center h220">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_29_01_chips.svg" alt="">
+                </div>
+
+
+                <div class="h24"></div>
+
+                <div class="font_sbms">Table of Figma Propertie, 피그마 속성</div>
+
+                <div class="h24"></div>
+
+                <table class="guide_table">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Values</th>
+                            <th>Default Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">State</span></td>
+                            <td>Default, Pressed, Disabled</td>
+                            <td>Default</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">Selected</span></td>
+                            <td>On, Off</td>
+                            <td>Off</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">Size</span></td>
+                            <td>48px, 40px</td>
+                            <td>48px</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">Leading Icon</span></td>
+                            <td>True, False</td>
+                            <td>False</td>
+                        </tr>
+                        <tr>
+                            <td><span class="color_tp_s font_sbss">Trailing Icon</span></td>
+                            <td>True, False</td>
+                            <td>False</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="h32"></div>
+
+                <h3 class="title fw700">Spec, 제작가이드</h3>
+
+                <div class="h12"></div>
+
+                <div class="color_tp_s font_sbmr">
+                    Chip의 높이는 최소 40px값을 권장하며, 텍스트와 컨테이너 사이의 패딩 값은 16~20px를 권장합니다.
+                </div>
+
+                <div class="h24"></div>
+
+                <div class="raoundBox_01 flex_center h220">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/back_comp_30_01_chips.svg" alt="">
+                </div>
+
+
+
+
+
+
+
+
 
                 <div class="h100"></div>
 
