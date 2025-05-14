@@ -386,6 +386,10 @@ nav .sidenav-trigger {
   align-items: start !important;
 }
 
+.align-items-end {
+  align-items: end !important;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -1012,6 +1016,18 @@ nav .sidenav-trigger {
 
 .h220 {
   height: 220px !important;
+}
+
+.h230 {
+  height: 230px !important;
+}
+
+.h240 {
+  height: 240px !important;
+}
+
+.h250 {
+  height: 250px !important;
 }
 
 .noPad, .padNo {

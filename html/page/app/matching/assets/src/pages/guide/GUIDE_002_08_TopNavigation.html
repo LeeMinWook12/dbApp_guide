@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 
-    <title>GUIDE_002_07_OptionList.html</title>
+    <title>GUIDE_002_08_TopNavigation.html</title>
 
 
     <!-- jquery -->
@@ -90,8 +90,8 @@
                             <li><a href="GUIDE_002_05_TextField.html">TextField</a></li>
                             
                             <li><a href="GUIDE_002_06_SelectField.html">SelectField</a></li>
-                            <li><a class="active" href="GUIDE_002_07_OptionList.html">OptionList</a></li>
-                            <li><a href="GUIDE_002_08_TopNavigation.html">Top Navigation</a></li>
+                            <li><a href="GUIDE_002_07_OptionList.html">OptionList</a></li>
+                            <li><a class="active" href="GUIDE_002_08_TopNavigation.html">Top Navigation</a></li>
                             <li><a href="GUIDE_002_09_BottomNavigation.html">Bottom Navigation</a></li>
                             <li><a href="GUIDE_002_10_List.html">List</a></li>
                             
@@ -121,12 +121,12 @@
 
                 <div class="h48"></div>
 
-                <div class="titleNav">OptionList</div>
+                <div class="titleNav">Top Navigation</div>
 
                 <div class="h24"></div>
  
                 <div class="roundBox_01">
-                    옵션리스트(OptionList)는 줄 단위로 나열된 리스트로 사용할 때 사용하는 컴포넌트입니다. 
+                    탑 내비게이션(Top Navigation)은 현재 화면의 정보 및 사용자가 수행 가능한 액션 혹은 기능이 표시되는 컴포넌트입니다.
                 </div>
 
                 <div class="h52"></div>
@@ -136,16 +136,16 @@
                 <div class="h24"></div>
 
                 <div class="roundBox_01 flex_center">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_40_01_optionList.png" alt="">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_45_01_topNavigation.svg" alt="">
                 </div>
 
                 <div class="h16"></div>
 
                 <ul class="d-flex gap16 color_t_s font_ssr">
                     <li>1. Container</li>
-                    <li>2. Leading Icon(옵션)</li>
+                    <li>2. Left Icon Area</li>
                     <li>3. Text Label</li>
-                    <li>4. Triling Icon(옵션)</li>
+                    <li>4. Right Icon Area</li>
                 </ul>
 
 
@@ -155,104 +155,25 @@
                 
                 <div class="h24"></div>
 
-                <div class="roundBox_01 noPad back_E0E0E0">
-                    <div class="grid_container H1W3">
-                        <div class="item h200">
-                            <div class="infoFix">
-                                <span class="f_head text">TextOnly</span>
-                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_41_01_optionList.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="infoFix">
-                                <span class="f_head text">Checkbox</span>
-                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_41_02_optionList.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="infoFix">
-                                <span class="f_head text">Radio</span>
-                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_41_03_optionList.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="h52"></div>
-
-                <h3 class="title fw700">State, 상태</h3>
-                
-                <div class="h24"></div>
-
                 <div class="roundBox_01 flex_center">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_42_01_optionList.svg" alt="">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_46_01_topNavigation.svg" alt="">
                 </div>
 
 
-
                 <div class="h52"></div>
-
-                <h3 class="title fw700">Style, 스타일</h3>
-                
-                <div class="h24"></div>
-
-                <div class="roundBox_01 flex_center h230">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_43_01_optionList.svg" alt="">
-                </div>
-
-                <div class="h52"></div>
-
-                <h3 class="title fw700">Table of Figma Propertie, 피그마 속성</h3>
-
-                <div class="h24"></div>
-
-                <table class="guide_table">
-                    <colgroup>
-                        <col>
-                        <col>
-                        <col>
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>Property</th>
-                            <th>Values</th>
-                            <th>Default Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">State</span></td>
-                            <td>Default, Selected, Disabled</td>
-                            <td>Default</td>
-                        </tr>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">Type</span></td>
-                            <td>TextOnly, Checkbox, Radio</td>
-                            <td>TextOnly</td>
-                        </tr>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">Size</span></td>
-                            <td>Fill, Outline</td>
-                            <td>Fill</td>
-                        </tr>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">Leading Icon</span></td>
-                            <td>True, False</td>
-                            <td>False</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="h32"></div>
 
                 <h3 class="title fw700">Spec, 제작가이드</h3>
 
+                <div class="h12"></div>
+
+                <div class="color_tp_s font_sbmr">
+                    Chip의 높이는 최소 40px값을 권장하며, 텍스트와 컨테이너 사이의 패딩 값은 16~20px를 권장합니다.
+                </div>
+
                 <div class="h24"></div>
 
                 <div class="roundBox_01 flex_center">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_44_01_optionList.svg" alt="">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_47_01_topNavigation.svg" alt="">
                 </div>
 
 

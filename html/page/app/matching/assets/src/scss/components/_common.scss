@@ -111,6 +111,7 @@ nav .sidenav-trigger{
 .justify-content-center{justify-content: center;}
 .justify-content-between{justify-content: space-between;}
 .align-items-start{align-items: start !important;}
+.align-items-end{align-items: end !important;}
 .align-items-center{align-items: center;}
 .align_center, .flex_center{@include flex_center;}
 .align_between_center{display: flex;justify-content: space-between;align-items: center;}
@@ -216,7 +217,7 @@ nav .sidenav-trigger{
 .h80{height: 80px !important;}
 
 //height : h100~h200
-@for $i from 100 through 220 {
+@for $i from 100 through 250 {
     @if $i % 10 == 0{
         .h#{$i}{height: #{$i}px !important;}
     }
