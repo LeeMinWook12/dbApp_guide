@@ -1015,12 +1015,8 @@ pre.hljs .copy-button:hover {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1px;
-}
-.grid_container.H1W2 {
-  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
+  gap: 1px;
 }
 .grid_container.H1W3 {
   grid-template-columns: repeat(3, 1fr);

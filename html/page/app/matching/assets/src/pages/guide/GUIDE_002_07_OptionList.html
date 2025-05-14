@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
 
-    <title>GUIDE_002_03_Link.html</title>
+    <title>GUIDE_002_07_OptionList.html</title>
 
 
     <!-- jquery -->
@@ -85,12 +85,12 @@
                         <ul class="dept1">
                             <li><a href="GUIDE_002_Component.html">Button</a></li>
                             <li><a href="GUIDE_002_02_SelectionControls.html">Selection Controls</a></li>
-                            <li><a class="active" href="GUIDE_002_03_Link.html">Link</a></li>
+                            <li><a href="GUIDE_002_03_Link.html">Link</a></li>
                             <li><a href="GUIDE_002_04_Chips.html">Chips</a></li>
                             <li><a href="GUIDE_002_05_TextField.html">TextField</a></li>
                             
                             <li><a href="GUIDE_002_06_SelectField.html">SelectField</a></li>
-                            <li><a href="GUIDE_002_07_OptionList.html">OptionList</a></li>
+                            <li><a class="active" href="GUIDE_002_07_OptionList.html">OptionList</a></li>
                             <li><a href="GUIDE_002_08_TopNavigation.html">Top Navigation</a></li>
                             <li><a href="GUIDE_002_09_BottomNavigation.html">Bottom Navigation</a></li>
                             <li><a href="GUIDE_002_10_List.html">List</a></li>
@@ -121,12 +121,12 @@
 
                 <div class="h48"></div>
 
-                <div class="titleNav">Link</div>
+                <div class="titleNav">OptionList</div>
 
                 <div class="h24"></div>
  
                 <div class="raoundBox_01">
-                    링크(Link)는 탐색 요소로 사용됩니다. 이는 동일한 페이지 내의 다른 사이트 또는 페이지, 리소스 같은 다른 위치로 이동시킵니다.
+                    dddddddd셀렉트필드(SelectField)는 사용자가 사용자가 옵션 리스트 중 하나의 옵션 선택 시 활용되는 컴포넌트입니다. 
                 </div>
 
                 <div class="h52"></div>
@@ -135,73 +135,61 @@
 
                 <div class="h24"></div>
 
-                <div class="raoundBox_01 flex_center h170">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_19_01_link.svg" alt="">
+                <div class="raoundBox_01 flex_center">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_36_01_selectField.svg" alt="">
                 </div>
 
                 <div class="h16"></div>
 
                 <ul class="d-flex gap16 color_t_s font_ssr">
-                    <li>1. Link Text</li>
-                    <li>2. Icon</li>
+                    <li>1. Container</li>
+                    <li>2. Leading Icon(옵션)</li>
+                    <li>3. Text Label(옵션)</li>
+                    <li>4. Input Text</li>
+                    <li>5. Dropdown Icon(옵션)</li>
+                    <li>6. Help text</li>
                 </ul>
 
 
                 <div class="h52"></div>
 
-                <h3 class="title fw700">Style, 스타일</h3>
+                <h3 class="title fw700">State, 상태</h3>
                 
                 <div class="h24"></div>
 
                 <div class="raoundBox_01 noPad back_E0E0E0">
                     <div class="grid_container">
-                        <div class="item">
+                        <div class="item h200">
                             <div class="infoFix">
-                                <span class="f_head text">Underline</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_20_01_link.svg" alt="">
+                                <span class="f_head text">Inactive</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_37_01_selectField.svg" alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="infoFix">
-                                <span class="f_head text">Standalone</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_20_02_link.svg" alt="">
+                                <span class="f_head text">Default</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_37_02_selectField.svg" alt="">
                             </div>
                         </div>
-                    </div>
-                </div>
-
-
-                <div class="h52"></div>
-
-                <h3 class="title fw700">Type, 종류</h3>
-                
-                <div class="h24"></div>
-
-                <div class="raoundBox_01 noPad back_E0E0E0">
-                    <div class="grid_container H1W4">
-                        <div class="item">
+                        <div class="item ">
                             <div class="infoFix">
-                                <span class="f_head text">Brand</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_20_01_link.svg" alt="">
+                                <span class="f_head text">Focus</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_37_03_selectField.svg" alt="">
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item ">
                             <div class="infoFix">
-                                <span class="f_head text">Primary</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_21_02_link.svg" alt="">
+                                <span class="f_head text">Error</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_37_04_selectField.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="item h200">
+                            <div class="infoFix">
+                                <span class="f_head text">Disabled</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_37_05_selectField.svg" alt="">
                             </div>
                         </div>
                         <div class="item">
-                            <div class="infoFix">
-                                <span class="f_head text">Secondary</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_21_03_link.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="infoFix">
-                                <span class="f_head text">BrandSub</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_21_04_link.svg" alt="">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -214,59 +202,17 @@
                 <div class="h24"></div>
 
                 <div class="raoundBox_01 noPad back_E0E0E0">
-                    <div class="grid_container H1W4">
+                    <div class="grid_container h180">
                         <div class="item">
                             <div class="infoFix">
-                                <span class="f_head text">24px</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_22_01_link.svg" alt="">
+                                <span class="f_head text">LG : 56px</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_38_01_selectField.svg" alt="">
                             </div>
                         </div>
                         <div class="item">
                             <div class="infoFix">
-                                <span class="f_head text">20px</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_22_02_link.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="infoFix">
-                                <span class="f_head text">18px</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_22_03_link.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="infoFix">
-                                <span class="f_head text">16px</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_22_04_link.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="h52"></div>
-
-                <h3 class="title fw700">Weight, 굵기</h3>
-                
-                <div class="h24"></div>
-
-                <div class="raoundBox_01 noPad back_E0E0E0">
-                    <div class="grid_container H1W3">
-                        <div class="item">
-                            <div class="infoFix">
-                                <span class="f_head text">Bold(24/20pt에서만 사용)</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_23_01_link.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="infoFix">
-                                <span class="f_head text">SemiBold</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_23_02_link.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="infoFix">
-                                <span class="f_head text">Regular</span>
-                                <img class="disBlock marT12" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_23_03_link.svg" alt="">
+                                <span class="f_head text">SM : 48px</span>
+                                <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_38_02_selectField.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -294,56 +240,35 @@
                     <tbody>
                         <tr>
                             <td><span class="color_tp_s font_sbss">State</span></td>
-                            <td>Default, Disabled</td>
-                            <td>Default</td>
+                            <td>Inactive, Default, Focused, Disabled, Error</td>
+                            <td>Inactive</td>
                         </tr>
                         <tr>
                             <td><span class="color_tp_s font_sbss">Style</span></td>
-                            <td>Underline, Standalone</td>
-                            <td>Underline</td>
-                        </tr>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">Type</span></td>
-                            <td>Brand, Primary, Secondary, BrandSub</td>
-                            <td>Brand</td>
+                            <td>Outline, Fill</td>
+                            <td>Outline</td>
                         </tr>
                         <tr>
                             <td><span class="color_tp_s font_sbss">Size</span></td>
-                            <td>24px, 20px, 18px, 16px</td>
-                            <td>18px</td>
-                        </tr>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">Weight</span></td>
-                            <td>Bold(폰트:24/20), SemiBold, Regular</td>
-                            <td>SemiBold</td>
+                            <td>LG, SM</td>
+                            <td>LG</td>
                         </tr>
                         <tr>
                             <td><span class="color_tp_s font_sbss">Leading Icon</span></td>
                             <td>True, False</td>
                             <td>False</td>
                         </tr>
-                        <tr>
-                            <td><span class="color_tp_s font_sbss">Trailing Icon</span></td>
-                            <td>True, False</td>
-                            <td>False</td>
-                        </tr>
                     </tbody>
                 </table>
 
-                <div class="h52"></div>
+                <div class="h32"></div>
 
                 <h3 class="title fw700">Spec, 제작가이드</h3>
-                
-                <div class="h12"></div>
-
-                <div class="color_tp_s font_sbmr">
-                    체크박스는 제공된 옵션 항목 중 한 개 이상 선택할 수 있을 때 사용합니다.
-                </div>
 
                 <div class="h24"></div>
 
-                <div class="raoundBox_01 flex_center h170">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_24_01_link.svg" alt="">
+                <div class="raoundBox_01 flex_center">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/02_component/back_comp_39_01_selectField.svg" alt="">
                 </div>
 
 
@@ -351,7 +276,8 @@
 
 
 
-                <br><br><br><br><br>
+
+
 
                 <div class="h100"></div>
 
