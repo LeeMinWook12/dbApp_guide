@@ -121,10 +121,6 @@
 
         });
 
-
-
-
-
     </script>
 
 
@@ -144,6 +140,24 @@
                     'box-shadow': '0px 2px 4px 0px rgba(0, 0, 0, 0.20)',
                 }).children('div[style*="left: 0px"]').removeAttr('style');
             });
+
+        });
+    </script>
+
+
+    <script>
+        //scrollspy 영역세로값 짧을때 세로사이즈 조절해서 anchor active처리 
+        $(function(){
+
+            var winHeight = $(window).height();
+
+            //top:56 + recuNav:49 + footer:80 - empty: 5
+            var scrollSpyLastHeight =  $('.scrollspy:last-child').height() + 180;
+
+            //alert(winHeight);alert(scrollSpyLastHeight);
+            if(scrollSpyLastHeight < winHeight){
+                $('.scrollspy:last-child').append('<div class="back_F5F5F5" style="height: '+ (winHeight - scrollSpyLastHeight) +'px"></div>');
+            }
 
         });
     </script>
@@ -268,7 +282,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="d-flex align-items-center gap08" href="">
+                            <a class="d-flex align-items-center gap08" onclick="fn_tel_click('052-254-9982');">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
                                     fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -311,7 +325,7 @@
     
                         <div class="d-flex align-items-center gap04">
                             <div class="font_sbmb">평가등급</div>
-                            <a class="modal-trigger" href="#modal_evalGrade_1" title="요양병원 평가등급 1234">
+                            <a class="modal-trigger" href="#modal_evalGrade_1">
                                 <img class="disBlock w24" src="/html/page/app/matching/assets/src/images/04icon/info.svg"
                                     alt="info">
                             </a>
@@ -490,6 +504,7 @@
     
                             <table class="table_basic bder_bottom bder_no">
                                 <colgroup>
+                                    <col style="width:84px;">
                                     <col>
                                 </colgroup>
                                 <tbody>
@@ -737,8 +752,6 @@
                         <div class="h20"></div>
                     </div>
     
-                    <div class="h40"></div>
-
                 </div>
     
     

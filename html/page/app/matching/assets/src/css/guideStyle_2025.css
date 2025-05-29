@@ -213,6 +213,14 @@ label {
   margin-bottom: 18px;
 }
 
+@media only screen and (min-width: 601px) {
+  #toast-container {
+    top: initial;
+    left: calc(50% - 300px);
+    max-width: 100%;
+    width: 600px;
+  }
+}
 mark {
   background: none;
   color: inherit;
@@ -371,6 +379,9 @@ nav.sidebar h4.title .evt_btn_sitemap {
   font-weight: 600;
   line-height: 24px; /* 150% */
   letter-spacing: -0.15px;
+}
+nav.sidebar .sidebar_list {
+  padding-bottom: 20px;
 }
 nav.sidebar .sidebar_list .tabs_dept_sidebar {
   display: none;

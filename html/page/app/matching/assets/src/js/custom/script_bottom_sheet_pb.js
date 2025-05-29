@@ -39,8 +39,8 @@ const showBottomSheet = (sheet) => {
 
     // Add touchmove listener for background scroll prevention
     //document.addEventListener("touchmove", preventBodyScroll, { passive: false });
-    document.addEventListener("wheel", preventBodyScroll, { passive: false });
-    activeSheetContent.addEventListener("wheel", allowScrollWithinModal, { passive: false });
+    document.addEventListener("wheel", preventBodyScroll, { passive: true });
+    activeSheetContent.addEventListener("wheel", allowScrollWithinModal, { passive: true });
 
     // Add event listeners to internal show-modal buttons
     const internalShowModalBtns = activeSheet.querySelectorAll(".show-modal");

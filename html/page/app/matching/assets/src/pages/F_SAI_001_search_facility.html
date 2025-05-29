@@ -134,8 +134,8 @@
                         $('[id$="_modal"]').find('.breadCb .dept02').text(thisTxt);
                         
                         //region02_modal적용하기 버튼 활성화
-                        $('[title="region01_apply"]').removeClass('btn_disable').addClass('btn_primary');
-                        $('[title="region02_apply"]').removeClass('btn_disable').addClass('btn_primary');
+                        $('[data-title="region01_apply"]').removeClass('btn_disable').addClass('btn_primary');
+                        $('[data-title="region02_apply"]').removeClass('btn_disable').addClass('btn_primary');
 
                         $('[title=region02_apply]').click(function(){
 
@@ -172,7 +172,7 @@
                 $('section').addClass('disNone');
 
                 //원하는 시설명 검색 화면 표시
-                $('section[title="section_recuSearch_intro_2"]').removeClass('disNone');
+                $('section[data-title="section_recuSearch_intro_2"]').removeClass('disNone');
 
 
             });
@@ -190,7 +190,7 @@
                 $('section').addClass('disNone');
 
                 //원래화면 표시
-                $('section[title="section_recuSearch_default_1"]').removeClass('disNone');
+                $('section[data-title="section_recuSearch_default_1"]').removeClass('disNone');
 
 
             });
@@ -200,8 +200,8 @@
         $(function(){
 
             function searChSectionResult() {
-                $('section[title="section_recuSearch_intro_2"]').addClass('disNone');
-                $('section[title="section_recuSearch_result_3"]').removeClass('disNone');
+                $('section[data-title="section_recuSearch_intro_2"]').addClass('disNone');
+                $('section[data-title="section_recuSearch_result_3"]').removeClass('disNone');
             }
 
             //엔터키 동작
@@ -287,7 +287,53 @@
         </header>
 
         <main>
-            <section title="section_recuSearch_default_1" class="default noPad">
+            <!-- BTS-382 202505 -->
+            <section data-title="section_recuSearch_noSearch" class="default noPad">
+
+                <div class="addr_filter_area">
+                    <div class="align_between_center w100p show-modal region01_btn_evt">
+                        <div class="addr">
+                            <span class="region01_evt_txt">서울시</span>
+                            <span class="region02_evt_txt">금천구</span>
+                            <span class="region03_evt_txt">서부샛길</span>
+                                 주소가 길면 점점처리
+                        </div>
+                        <div class="change_region">지역변경</div>
+                    </div>
+                    <a class="filter modal-trigger" href="#modal_select_filter">
+                        <img class="icon" src="/html/page/app/matching/assets/src/images/04icon/icon_filter.svg" alt="filter">
+                        <span>필터</span>
+                    </a>
+                </div>
+
+                <div class="h12 back_F5F5F5"></div>
+
+                <div class="padH24W20">
+
+                    <div class="color_t_s font_sbsr">총 <span class="color_t_p font_sbsb">0개</span>의 시설이 있어요. </div>
+
+                    <!-- BTS-382 202505 [facility_list_area] 대신 들어갈 부분 -->
+                    <div class="flex_center" style="height:calc(100vh - 290px)">
+
+                        <div class="center">
+    
+                            <img src="/html/page/app/matching/assets/src/images/08etc/recu_default.svg" alt="">
+    
+                            <div class="h12"></div>
+            
+                            <div class="color_t_s font_sbmr">다시 검색해보세요.</div>
+            
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+            <!-- BTS-382 202505 end-->
+
+            <section data-title="section_recuSearch_default_1" class="default noPad disNone">
 
                 <div class="addr_filter_area">
                     <div class="align_between_center w100p show-modal region01_btn_evt">
@@ -316,11 +362,30 @@
                         <div class="item_facility">
     
                             <div class="img_area">
-                                <img src="/html/page/app/matching/assets/src/images/sample/recu_thumb.jpg"  alt="">
+                                <img src="/html/page/app/matching/assets/src/images/sample/sam_fac_02.jpg"  alt="">
                             </div>
                             <div class="ctn_area">
                                 <div class="partner">파트너</div>
-                                <div class="title">네이처 요양병원 요양병원 요양병원 요양병원</div>
+                                <div class="title">11네이처 요양병원 요양병원 요양병원 요양병원</div>
+                                <div class="addr">서울특별시 강남구 헌릉로569길 21-40(세곡동)</div>
+                                <div>
+                                    <span class="badge_order back_danger_subtle_fs12">1등급</span>
+                                    <span class="badge_order back_gray_subtle_fs12">대형</span>
+                                    <span class="badge_order back_gray_subtle_fs12">설립400년</span>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    
+                        <div class="item_facility">
+    
+                            <div class="img_area">
+                                <img src="/html/page/app/matching/assets/src/images/sample/sam_fac_03.jpg"  alt="">
+                            </div>
+                            <div class="ctn_area">
+                                <div class="partner">파트너</div>
+                                <div class="title">11네이처 요양병원 요양병원 요양병원 요양병원</div>
                                 <div class="addr">서울특별시 강남구 헌릉로569길 21-40(세곡동)</div>
                                 <div>
                                     <span class="badge_order back_danger_subtle_fs12">1등급</span>
@@ -332,6 +397,25 @@
     
                         </div>
     
+                        <div class="item_facility">
+    
+                            <div class="img_area">
+                                <img src="/html/page/app/matching/assets/src/images/sample/recu_thumb.jpg"  alt="">
+                            </div>
+                            <div class="ctn_area">
+                                <div class="title">네이처 요양병원</div>
+                                <div class="addr">서울특별시 강남구 헌릉로569길 21-40(세곡동)</div>
+                                <div>
+                                    <span class="badge_order back_danger_subtle_fs12">1등급</span>
+                                    <span class="badge_order back_gray_subtle_fs12">대형</span>
+                                    <span class="badge_order back_gray_subtle_fs12">설립4년</span>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+
+
                         <div class="item_facility">
     
                             <div class="img_area">
@@ -431,7 +515,7 @@
                 </div>
 
             </section>
-            <section title="section_recuSearch_intro_2" class="section_center disNone">
+            <section data-title="section_recuSearch_intro_2" class="section_center disNone">
 
                 <div class="noResult">
                     <div class="color_t_s font_sbsr">
@@ -450,7 +534,7 @@
                 </div>
 
             </section>
-            <section title="section_recuSearch_result_3" class="default noPad disNone">
+            <section data-title="section_recuSearch_result_3" class="default noPad disNone">
 
 
                 <div class="padH24W20">
@@ -838,7 +922,7 @@
 
                     <div class="h16"></div>
 
-                    <ul title="region01" class="chip_area">
+                    <ul data-title="region01" class="chip_area">
     
                         <li class="show-modal region02_btn_evt close_modal">서울</li>
                         <li class="show-modal region02_btn_evt close_modal">부산</li>
@@ -869,7 +953,7 @@
 
                 <div class="modal-footer">
                     <div class="btn_area d-flex">
-                        <a title="region01_apply" class="close_modal waves-effect btn btn-large w100p btn_disable">적용하기</a>
+                        <a data-title="region01_apply" class="close_modal waves-effect btn btn-large w100p btn_disable">적용하기</a>
                     </div>
                 </div>
             
@@ -901,7 +985,7 @@
 
                     <div class="h16"></div>
 
-                    <ul title="region02" class="chip_area">
+                    <ul data-title="region02" class="chip_area">
 
                         <li>전체</li>
                         <li>강동구</li>
@@ -945,7 +1029,7 @@
 
                 <div class="modal-footer">
                     <div class="btn_area d-flex">
-                        <a title="region02_apply" class="modal-close waves-effect btn btn-large w100p close_modal btn_disable">적용하기</a>
+                        <a data-title="region02_apply" class="modal-close waves-effect btn btn-large w100p close_modal btn_disable">적용하기</a>
                     </div>
                 </div>
 
@@ -978,7 +1062,7 @@
 
                     <div class="h16"></div>
 
-                    <ul title="region02" class="chip_area">
+                    <ul data-title="region02" class="chip_area">
 
                         <li>상세길1</li>
                         <li>상세길2</li>
@@ -997,7 +1081,7 @@
 
                 <div class="modal-footer">
                     <div class="btn_area d-flex">
-                        <a title="region03_apply" class="modal-close waves-effect btn btn-large w100p close_modal btn_disable">적용하기</a>
+                        <a data-title="region03_apply" class="modal-close waves-effect btn btn-large w100p close_modal btn_disable">적용하기</a>
                     </div>
                 </div>
 

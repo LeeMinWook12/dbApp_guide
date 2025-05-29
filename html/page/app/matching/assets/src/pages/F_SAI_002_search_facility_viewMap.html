@@ -105,8 +105,8 @@
                         $('[id$="_modal"]').find('.breadCb .dept02').text(thisTxt);
                         
                         //region02_modal적용하기 버튼 활성화
-                        $('[title="region01_apply"]').removeClass('btn_disable').addClass('btn_primary');
-                        $('[title="region02_apply"]').removeClass('btn_disable').addClass('btn_primary');
+                        $('[data-title="region01_apply"]').removeClass('btn_disable').addClass('btn_primary');
+                        $('[data-title="region02_apply"]').removeClass('btn_disable').addClass('btn_primary');
 
                         $('[title=region02_apply]').click(function(){
 
@@ -145,7 +145,7 @@
                     $('section').addClass('disNone');
 
                     //원하는 시설명 검색 화면 표시
-                    $('section[title="section_recuSearch_intro_2"]').removeClass('disNone');
+                    $('section[data-title="section_recuSearch_intro_2"]').removeClass('disNone');
 
 
                 });
@@ -163,7 +163,7 @@
                     $('section').addClass('disNone');
 
                     //원래화면 표시
-                    $('section[title="section_recuSearch_default_1"]').removeClass('disNone');
+                    $('section[data-title="section_recuSearch_default_1"]').removeClass('disNone');
 
 
                 });
@@ -173,8 +173,8 @@
             $(function(){
 
                 function searChSectionResult() {
-                    $('section[title="section_recuSearch_intro_2"]').addClass('disNone');
-                    $('section[title="section_recuSearch_result_3"]').removeClass('disNone');
+                    $('section[data-title="section_recuSearch_intro_2"]').addClass('disNone');
+                    $('section[data-title="section_recuSearch_result_3"]').removeClass('disNone');
                 }
 
                 //엔터키 동작
@@ -264,7 +264,7 @@
         </header>
 
         <main>
-            <section title="section_recuSearch_default_1" class="viewMap">
+            <section data-title="section_recuSearch_default_1" class="viewMap">
 
                 <div class="addr_filter_area">
                     <div class="align_between_center w100p show-modal region01_btn_evt">
@@ -286,16 +286,16 @@
                 <div class="relative mapTest" style="background: url('/html/page/app/matching/assets/src/images/sample/map_sam01.png') no-repeat center;background-size: cover; height: 100%;">
                     지도샘플
                     <div style="position: absolute; z-index: 99999999; white-space: nowrap; margin: 0px; left: 35px; top: 140px; user-select: auto !important;">
-                        <div title="sampleCk01" class="map_tooltip active" style="text-align: center; user-select: auto !important;">해야요양병원</div>
+                        <div data-title="sampleCk01" class="map_tooltip active" style="text-align: center; user-select: auto !important;">해야요양병원</div>
                     </div>
                     <div style="position: absolute; z-index: 99999999; white-space: nowrap; margin: 0px; left: 20px; top: 180px; user-select: auto !important;">
-                        <div title="sampleCk02" class="map_tooltip" style="text-align: center; user-select: auto !important;">가나요양병원</div>
+                        <div data-title="sampleCk02" class="map_tooltip" style="text-align: center; user-select: auto !important;">가나요양병원</div>
                     </div>
                     <div style="position: absolute; z-index: 99999999; white-space: nowrap; margin: 0px; left: 30px; top: 220px; user-select: auto !important;">
-                        <div title="sampleCk03" class="map_tooltip" style="text-align: center; user-select: auto !important;">네이처이름<br>긴요양병원</div>
+                        <div data-title="sampleCk03" class="map_tooltip" style="text-align: center; user-select: auto !important;">네이처이름<br>긴요양병원</div>
                     </div>
                     <div style="position: absolute; z-index: 99999999; white-space: nowrap; margin: 0px; left: 50px; top: 230px; user-select: auto !important;">
-                        <div title="sampleCk04" class="map_tooltip" style="text-align: center; user-select: auto !important;">우리요양병원</div>
+                        <div data-title="sampleCk04" class="map_tooltip" style="text-align: center; user-select: auto !important;">우리요양병원</div>
                     </div>
     
                     <div class="map_tool_dept d02" style="top:60px;right:20px;">영등포구<span class="num">21</span></div>
@@ -339,7 +339,7 @@
                     <div class="swiper faList_Swiper">
                         <div class="swiper-wrapper">
 
-                            <div title="sampleCk01" class="swiper-slide">
+                            <div data-title="sampleCk01" class="swiper-slide">
                                 <div class="card item_facility padH20W16">
 
                                     <div class="ctn_area">
@@ -357,7 +357,7 @@
                             </div>
                             <!-- swiper-slide -->
 
-                            <div title="sampleCk02" class="swiper-slide">
+                            <div data-title="sampleCk02" class="swiper-slide">
                                 <div class="card item_facility padH20W16">
 
                                     <div class="ctn_area">
@@ -375,7 +375,7 @@
                             </div>
                             <!-- swiper-slide -->
 
-                            <div title="sampleCk03" class="swiper-slide">
+                            <div data-title="sampleCk03" class="swiper-slide">
                                 <div class="card item_facility padH20W16">
 
                                     <div class="ctn_area">
@@ -393,7 +393,7 @@
                             </div>
                             <!-- swiper-slide -->
 
-                            <div title="sampleCk04" class="swiper-slide">
+                            <div data-title="sampleCk04" class="swiper-slide">
                                 <div class="card item_facility padH20W16">
 
                                     <div class="ctn_area">
@@ -426,7 +426,7 @@
 
             </section>
 
-            <section title="section_recuSearch_intro_2" class="section_center disNone">
+            <section data-title="section_recuSearch_intro_2" class="section_center disNone">
 
                 <div class="center">
 
@@ -439,7 +439,7 @@
                 </div>
 
             </section>
-            <section title="section_recuSearch_result_3" class="default noPad disNone">
+            <section data-title="section_recuSearch_result_3" class="default noPad disNone">
 
 
                 <div class="padH24W20">
@@ -786,7 +786,7 @@
 
                     <div class="h16"></div>
 
-                    <ul title="region01" class="chip_area">
+                    <ul data-title="region01" class="chip_area">
     
                         <li class="show-modal region02_btn_evt close_modal">서울</li>
                         <li class="show-modal region02_btn_evt close_modal">부산</li>
@@ -817,7 +817,7 @@
 
                 <div class="modal-footer">
                     <div class="btn_area d-flex">
-                        <a title="region01_apply" class="close_modal waves-effect btn btn-large w100p btn_disable">적용하기</a>
+                        <a data-title="region01_apply" class="close_modal waves-effect btn btn-large w100p btn_disable">적용하기</a>
                     </div>
                 </div>
             
@@ -847,7 +847,7 @@
 
                     <div class="h16"></div>
 
-                    <ul title="region02" class="chip_area">
+                    <ul data-title="region02" class="chip_area">
 
                         <li>전체</li>
                         <li>강동구</li>
@@ -891,7 +891,7 @@
 
                 <div class="modal-footer">
                     <div class="btn_area d-flex">
-                        <a title="region02_apply" class="modal-close waves-effect btn btn-large w100p close_modal btn_disable">적용하기</a>
+                        <a data-title="region02_apply" class="modal-close waves-effect btn btn-large w100p close_modal btn_disable">적용하기</a>
                     </div>
                 </div>
 
@@ -923,16 +923,16 @@
                 let activeSlide = $(".swiper-slide-active");
                 if (!activeSlide.length) return;
 
-                let activeTitle = activeSlide.attr("title");
+                let activeTitle = activeSlide.attr("data-title");
 
                 // 모든 map_tooltip에서 active 제거 후, 해당 title 가진 요소만 active 추가
                 $(".map_tooltip").removeClass("active");
-                $('.map_tooltip[title="' + activeTitle + '"]').addClass("active");
+                $('.map_tooltip[data-title="' + activeTitle + '"]').addClass("active");
             }
 
             //map_tooltip 클릭 시 해당 swiper-slide로 이동
             $(".map_tooltip").on("click", function () {
-                let clickedTitle = $(this).attr("title");
+                let clickedTitle = $(this).attr("data-title");
 
                 // 모든 map_tooltip에서 active 제거 후 클릭된 요소만 active 추가
                 $(".map_tooltip").removeClass("active");
@@ -945,7 +945,7 @@
                 let targetIndex = null;
 
                 $(".faList_Swiper .swiper-slide").each(function (index) {
-                    if ($(this).attr("title") === clickedTitle) {
+                    if ($(this).attr("data-title") === clickedTitle) {
                         targetIndex = $(this).index(); // 현재 슬라이드의 실제 index 저장
                         return false; // 반복문 중단
                     }

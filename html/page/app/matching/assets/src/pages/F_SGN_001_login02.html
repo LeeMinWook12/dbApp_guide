@@ -46,9 +46,7 @@
       <nav class="top">
         <a class="btn_back waves-effect" href="#">
           <span class="icon"></span>
-          <!-- <span class="txt">상담 신청 완료</span> -->
         </a>
-        <a class="waves-effect top_txt" href="#">둘러보기</a>
       </nav>
     </header>
 
@@ -65,35 +63,36 @@
           이로움돌봄
         </div>
 
-        <!-- <h2 class="title">
-          소중한 부모님과<br />
-          나를 위한 공간
-        </h2>
-
-        <div class="txt">
-          <span>시니어 정보 플랫폼</span>
-          <span class="fw600">'이로움ON'</span>
-        </div> -->
-
+        <br><br>
+        <div class="color_primary modal-trigger" data-target="modal_fullsreen"><u>전체팝업열기</u></div>
 
 
       </section>
     </main>
 
     <footer class="page-footer">
-
+      <!-- DP2025-95 202505 -->
       <div class="btn_area d-flex f-column">
         <div class="relative">
-            <span class="tool_tip">최근로그인</span>
+          <!-- <span class="tool_tip">최근로그인</span> -->
+          <a class="waves-effect btn-large btn_apple w100p align_center">
+            <img class="icon_img" src="/html/page/app/matching/assets/src/images/08etc/icon_Apple.svg">
+            <span><span class="fw700">애플</span><span class="fw400">로 계속하기</span></span>
+          </a>
+        </div>
+        <div class="relative">
+          <span class="tool_tip">최근로그인</span>
             <a class="waves-effect btn-large btn_naver w100p align_center">
             <img class="icon_img" src="../images/08etc/icon_naver.svg">
             <span><span class="fw700">네이버</span>로 계속하기</span>
           </a>
         </div>
         <div class="relative">
-          <a class="waves-effect btn-large btn_cancel w100p">이로움ON회원으로 계속하기</a>
+          <!-- <span class="tool_tip">최근로그인</span> -->
+          <a class="waves-effect btn-large btn_cancel w100p">통합회원으로 계속하기</a>
         </div>
       </div>
+      <!-- DP2025-95 202505 end -->
 
 
     </footer>
@@ -107,6 +106,76 @@
 
   </div>
   <!-- wrapper -->
+
+<script>
+        $(function () {
+            $(document).ready(function () {
+                $('#modal_fullsreen').modal('open');
+            });
+        });
+</script>
+
+    <!-- DP2025-95 202505 -->
+    <!-- Modal fullsreen -->
+    <div id="modal_fullsreen" class="modal fullscreen">
+
+        <div class="modal_header">
+          <h4 class="modal_title"></h4>
+          <!-- X 주석처리 -->
+          <!-- <div class="close_x modal-close waves-effect"></div> -->
+        </div>
+  
+        <div class="modal-content pad020">
+
+          <div class="h40"></div>
+
+          <h2 class="title">
+            <span class="fw400">지금 로그인하시고 </span><br>
+            연 160만원 복지 지원금 <br>
+            <span class="fw400">상담 받으세요</span>
+          </h2>
+
+          <div class="marT8 color_tp_p font_shx">
+            이로움돌봄
+          </div>
+          <span class="color_danger fs14 modal-close">** 현재 모달화면 입니다. 클릭하면 닫힘**</span>
+
+
+  
+        </div>
+        <!-- modal-content -->
+  
+        <footer class="page-footer">
+
+            <div class="btn_area d-flex f-column">
+                <div class="relative">
+                    <span class="tool_tip">최근로그인</span>
+                    <a class="waves-effect btn-large btn_apple w100p align_center">
+                        <img class="icon_img" src="/html/page/app/matching/assets/src/images/08etc/icon_Apple.svg">
+                        <span><span class="fw700">애플</span><span class="fw400">로 계속하기</span></span>
+                    </a>
+                </div>
+                <div class="relative">
+                    <!-- <span class="tool_tip">최근로그인</span> -->
+                    <a class="waves-effect btn-large btn_naver w100p align_center">
+                        <img class="icon_img" src="../images/08etc/icon_naver.svg">
+                        <span><span class="fw700">네이버</span>로 계속하기</span>
+                    </a>
+                </div>
+                <div class="relative">
+                    <!-- <span class="tool_tip">최근로그인</span> -->
+                    <a class="waves-effect btn-large btn_cancel w100p">통합회원으로 계속하기</a>
+                </div>
+            </div>
+        
+        
+        </footer>
+  
+  
+  
+      </div>
+      <!-- DP2025-95 202505 end -->
+
 
 
 

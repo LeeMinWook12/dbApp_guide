@@ -42,6 +42,7 @@ nav.top{
 
 
         .icon{
+            cursor: pointer;
             display: inline-block;
             background: url('../images/04icon/chevron-left_thin.svg') no-repeat center center;
             text-indent: 40px;
@@ -65,5 +66,5 @@ nav.top{
         @include Suit_Body_MD_Regular;
     }
 
-    .icon_area{display: inline-block;width: 48px;height: 48px;display: flex;justify-content: center;align-items: center;}
+    .icon_area{cursor: pointer; display: inline-block;width: 48px;height: 48px;display: flex;justify-content: center;align-items: center;}
 }

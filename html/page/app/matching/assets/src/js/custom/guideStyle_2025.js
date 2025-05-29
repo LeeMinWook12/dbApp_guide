@@ -401,3 +401,26 @@ $(document).ready(function () {
     $('.tabs_htmlcss').tabs();
 });
 
+
+
+//nav.sidebar 스크롤 밑에 있는 메뉴 사이드바 버튼 클릭하면 스크롤 올리기
+$(function(){
+
+    $(window).on('load', function () {
+        $('nav.sidebar .sidebar_list ul.dept1 > li > a.active:not(.arrow)').each(function () {
+            var winHeight = $(window).height();
+            var offsetTop = $(this).offset().top;
+            
+            if(winHeight < offsetTop + 100){
+
+                // 현재 스크롤 위치에서 해당 요소의 위치로 스크롤
+                $('nav.sidebar').animate({
+                    scrollTop: offsetTop - 100
+                }, 300); // 300ms 동안 부드럽게 스크롤
+
+            }
+
+        });
+    });
+
+});

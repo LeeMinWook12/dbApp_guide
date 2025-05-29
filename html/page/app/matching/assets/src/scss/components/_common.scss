@@ -216,8 +216,8 @@ nav .sidenav-trigger{
 .h75{height: 75px !important;}
 .h80{height: 80px !important;}
 
-//height : h100~h200
-@for $i from 100 through 250 {
+//height : h100~h320
+@for $i from 100 through 320 {
     @if $i % 10 == 0{
         .h#{$i}{height: #{$i}px !important;}
     }
@@ -316,6 +316,8 @@ nav .sidenav-trigger{
 .pad_24_20_20{padding: 24px 20px 20px !important;}
 
 .pad_24_20_40{padding: 24px 20px 40px !important;}
+
+.pad_28_24_0{padding: 28px 24px 0 !important;}
 
 .pad_32_20_16{padding: 32px 20px 16px !important;}
 
@@ -417,6 +419,9 @@ section.default .marT-20W-20{margin: -20px -20px 0;}
 .line_clamp_2{
     @include line_clamp_2;
 }
+
+.word_break_all{word-break: break-all;}
+
 
 //border 보더
 .no_bder{border: 0 !important;}
@@ -885,6 +890,7 @@ hr{border:0; height:1px; background-color: $--Color-bg-Primitive-secondary ;
 .btn_chk{
 
     & + label{
+        cursor: pointer;
         border-radius: 8px;
         border: 1px solid #E0E0E0;
         background: #fff;
@@ -1362,6 +1368,7 @@ mark{
 .table_basic tr{border: none;}
 .table_basic td,.table_basic th {
     padding: 12px 0;
+    word-break: break-all;
     
 }
 .table_basic th{
@@ -1518,6 +1525,7 @@ ul.list_dept1{
 
     &.black_dot li::before{
         background-color: #1a1a1a;
+        top: calc(10px); //
         width: 5px;height: 5px;
     }
 
@@ -1543,7 +1551,7 @@ ul.list_dept1{
         padding-left: 24px;
         position: relative;
     
-        &::before{content: '';display: inline-block;position: absolute; top: calc(50% - 2px);left: 10px;background-color: #000; width: 4px;height: 4px;border-radius: 50px;}
+        &::before{content: '';display: inline-block;position: absolute; top: calc(11px)/*calc(50% - 2px)*/;left: 10px;background-color: #000; width: 4px;height: 4px;border-radius: 50px;}
     
         &+li{margin-top: 8px;}
     
@@ -1871,6 +1879,8 @@ ul.list_dept1{
 //링크 커서
 .cursor_p{cursor: pointer;}
 
+.region01_btn_evt{cursor: pointer;}
+a[onclick]{cursor: pointer;}
 
 
 .pointerEvtNone{pointer-events: none;}

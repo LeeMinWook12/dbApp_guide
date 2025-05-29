@@ -123,6 +123,14 @@ body {
     right: 140px;
   }
 }
+@media only screen and (min-width: 601px) {
+  #toast-container {
+    top: initial;
+    left: calc(50% - 384px);
+    max-width: 100%;
+    width: 768px;
+  }
+}
 .recuNav_wrap.active .recuNav {
   max-width: 768px;
 }/*# sourceMappingURL=style_eroumDb.css.map */

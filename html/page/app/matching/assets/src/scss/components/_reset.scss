@@ -598,7 +598,18 @@ label{color: inherit;}
     margin-bottom: 18px;
 
 }
- 
+
+//토스트 pc 가운데 처리
+//style_eroumDb.scss 참조
+@media only screen and (min-width: 601px){
+    #toast-container{
+        top: initial;
+        left: calc(50% - 300px);
+        max-width: 100%;
+        width: 600px;
+    }
+}
+
 
 //mark 마크
 mark{background:none;color: inherit;}

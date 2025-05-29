@@ -176,7 +176,7 @@ h5.title{
 
 }
 
-.close_x{display: block;width:32px;height: 32px;background: url(../images/04icon/close.svg) no-repeat center center;}
+.close_x{cursor: pointer;display: block;width:32px;height: 32px;background: url(../images/04icon/close.svg) no-repeat center center;}
 .close_x.p03{display: block;width:32px;height: 32px;background: url(../images/04icon/close_3.svg) no-repeat center center;}
 
 //modal
@@ -696,6 +696,7 @@ h5.title{
     display: flex;
 
     > span{
+        cursor: pointer;
         color: $--Color-text-disabled;
         @include Suit_Body_MD_SemiBold;
 
@@ -742,6 +743,7 @@ h5.title{
 
 
     & > * {
+        cursor: pointer;
         width:100%;height: 70px;padding: 0 8px;border-radius: 8px;
         border:1px solid $--Color-border-Primitive-secondary;
         background-color: #fff;
@@ -1193,6 +1195,7 @@ h5.title{
     &.back_rom_main_01{
         min-height: 160px;
         background-image: url('../images/10om/rom_main_01.svg');
+        background-size: 144px;
         background-position: right bottom;
         background-repeat: no-repeat;
     }
@@ -1200,6 +1203,7 @@ h5.title{
     &.back_rom_main_02{
         min-height: 160px;
         background-image: url('../images/10om/rom_main_02.svg');
+        background-size: 144px;
         background-position: right bottom;
         background-repeat: no-repeat;
     }
@@ -1207,6 +1211,7 @@ h5.title{
     &.back_rom_main_03{
         min-height: 160px;
         background-image: url('../images/10om/rom_main_03.svg');
+        background-size: 144px;
         background-position: right bottom;
         background-repeat: no-repeat;
     }
@@ -1214,6 +1219,7 @@ h5.title{
     &.back_rom_main_04{
         min-height: 160px;
         background-image: url('../images/10om/rom_main_04.svg');
+        background-size: 144px;
         background-position: right bottom;
         background-repeat: no-repeat;
     }
@@ -1221,6 +1227,7 @@ h5.title{
     &.back_rom_main_05{
         min-height: 160px;
         background-image: url('../images/10om/rom_main_05.svg');
+        background-size: 144px;
         background-position: right bottom;
         background-repeat: no-repeat;
     }
@@ -4911,6 +4918,7 @@ h5.title{
 
 //시설리스트
 .item_facility{
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 16px;
@@ -5061,6 +5069,7 @@ h5.title{
     }
 
     .c_location{
+        cursor: pointer;
         width: 48px;height: 48px;
         @include flex_center;
         border-radius: 100px;
@@ -5195,47 +5204,6 @@ div[style*='z-index']:has(>.map_tooltip.active) {z-index: 100000000 !important;}
             object-fit: cover;
             object-position: center center;
         }
-
-        .partner_area{
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 7px 0;
-            background: rgba(0, 0, 0, 0.65);
-            @include flex_center;
-           
-
-            .partner{
-                position: relative;
-                color:#fff;
-                @include Suit_Body_SS_SemiBold;
-
-                @include flex_center;
-                gap: 8px;
-
-                
-                &::before{
-                    content: '';
-                    display: inline-block;
-                    width: 15px;height: 24px;
-                    background-image: url('../images/23recu/txt_partner.png');
-                    background-size: cover;
-
-                }
-
-                &::after{
-                    content: '';
-                    display: inline-block;
-                    width: 15px;height: 24px;
-                    background-image: url('../images/23recu/txt_partner.png');
-                    background-size: cover;
-                    transform: rotateY(180deg);
-
-                }
-
-            }
-        }
-        
     
     }
 
@@ -5253,6 +5221,49 @@ div[style*='z-index']:has(>.map_tooltip.active) {z-index: 100000000 !important;}
     }
 
 }
+
+
+.partner_area{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 7px 0;
+    background: rgba(0, 0, 0, 0.65);
+    @include flex_center;
+    
+
+    .partner{
+        position: relative;
+        color:#fff;
+        @include Suit_Body_SS_SemiBold;
+
+        @include flex_center;
+        gap: 8px;
+
+        
+        &::before{
+            content: '';
+            display: inline-block;
+            width: 15px;height: 24px;
+            background-image: url('../images/23recu/txt_partner.png');
+            background-size: cover;
+
+        }
+
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 15px;height: 24px;
+            background-image: url('../images/23recu/txt_partner.png');
+            background-size: cover;
+            transform: rotateY(180deg);
+
+        }
+
+    }
+}
+
+
 
 
 
@@ -5468,6 +5479,7 @@ div[style*='z-index']:has(>.map_tooltip.active) {z-index: 100000000 !important;}
    
 //swiper없을때 기본이미지
 .noImg_recu_detail{
+    position: relative;
     height: 250px;
     background: #ecf3ff url('../images/23recu/noImg_recu_detail.png') no-repeat center bottom;
     background-size: contain;

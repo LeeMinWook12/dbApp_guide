@@ -299,6 +299,27 @@ $(function(){
 
     });
 
+    //시설찾기 섬네일 가로세로 1:1 정사각형
+    $('.item_facility .img_area img').each(function(){
+
+        var itemImgWidth = $(this).outerWidth();
+        var itemImgHeight = $(this).outerHeight();
+
+        if(itemImgWidth > itemImgHeight){
+            $(this).css({
+                'width':'auto',
+                'height':'100%'
+            });
+
+        }else{
+            $(this).css({
+                'width':'100%',
+                'height':'auto'
+            });
+        }
+
+    });
+
 
 
     //상품상세페이지 상품영역 1:1 정사각형
