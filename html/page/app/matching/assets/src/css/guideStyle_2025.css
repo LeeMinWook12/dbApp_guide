@@ -33,7 +33,7 @@ body {
   box-shadow: none;
 }
 
-button, input, optgroup, select, textarea {
+button, input, optgroup, select, textarea, pre, code {
   font-family: "SUIT";
 }
 
@@ -735,31 +735,87 @@ section .titleNav {
     height: calc(100vh - 161px);
   }
 }
+.lang_htmlCode {
+  margin-top: 24px;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #bdbdbd;
+  border-bottom: none;
+  padding: 32px;
+}
+
 /* 코드 */
 pre.hljs {
   position: relative;
   overflow: auto;
-  border-radius: 10px;
-  height: 200px;
+  border-radius: 0 0 8px 8px;
+  padding: 0 0;
+}
+pre.hljs .titleArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  border-bottom: 1px solid #999;
+  padding: 0 16px 0 32px;
+}
+pre.hljs::before {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 27px; /* 150% */
+  letter-spacing: -0.27px;
 }
 pre.hljs code.hljs {
   transition: 0.3s all;
-  height: 100%;
+  max-height: 300px;
+  background-color: #333;
+  padding: 0;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important; /* 150% */
+  letter-spacing: -0.24px !important;
+}
+pre.hljs code.hljs, pre.hljs code.hljs * {
+  color: #fff;
+}
+pre.hljs code.hljs::-webkit-scrollbar {
+  width: 10px;
+}
+pre.hljs code.hljs::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+pre.hljs code.hljs::-webkit-scrollbar-track {
+  background-color: #333;
+  border-radius: 10px;
 }
 pre.hljs code.hljs:hover {
   box-shadow: inset 0 0 40px #222222;
 }
 pre.hljs .copy-button {
-  position: absolute;
+  position: sticky;
   top: 5px;
   right: 18px;
-  padding: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-image: url("/html/page/app/matching/assets/src/images/100guide/icon/icon_copy.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 24px;
 }
-pre.hljs .copy-button:hover {
-  background-color: rgba(224, 224, 224, 0.337254902);
+pre.hljs .copy-button.copy_active {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.14);
+  border: 1px solid #6f6f6f;
+  border-radius: 4px;
 }
 
 .flex_center {
@@ -1005,6 +1061,17 @@ pre.hljs .copy-button:hover {
 }
 .guide_table tbody.col_ct_5 tr td:nth-child(5) {
   text-align: center;
+}
+.guide_table.g02 thead tr {
+  border-top: none;
+  border-bottom: 1.5px solid #111;
+}
+.guide_table.g02 thead tr th {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+  letter-spacing: -0.24px !important;
+  color: #1a1a1a;
 }
 
 .setColorBox {

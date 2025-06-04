@@ -33,7 +33,7 @@ body {
   box-shadow: none;
 }
 
-button, input, optgroup, select, textarea {
+button, input, optgroup, select, textarea, pre, code {
   font-family: "SUIT";
 }
 

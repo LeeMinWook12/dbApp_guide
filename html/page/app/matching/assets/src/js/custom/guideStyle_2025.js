@@ -1,33 +1,5 @@
 
 
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre code').forEach((el) => {
-        el.parentNode.classList.add('hljs');
-
-        // 복사 버튼 생성
-        let button = document.createElement("a");
-        button.innerHTML = "📄";
-        button.className = "copy-button";
-        el.parentNode.appendChild(button);
-
-        // 복사 기능 추가
-        button.addEventListener("click", function () {
-            let text = el.innerText;
-            navigator.clipboard.writeText(text).then(function () {
-                button.innerHTML = "Copied!";
-                setTimeout(function () {
-                    button.innerHTML = "📄";
-                }, 2000);
-            }, function (err) {
-                console.error('복사 실패: ', err);
-            });
-        });
-    });
-});
-
-
-
 $(function(){
     //사이드바 햄버거 버튼
     $('header .gs_header .m_menu').click(function(){

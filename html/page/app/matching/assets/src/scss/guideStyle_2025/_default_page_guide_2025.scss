@@ -299,6 +299,21 @@
     tbody.col_ct_3 tr td:nth-child(3){text-align: center;}
     tbody.col_ct_4 tr td:nth-child(4){text-align: center;}
     tbody.col_ct_5 tr td:nth-child(5){text-align: center;}
+
+    &.g02{
+
+    thead{
+        tr{
+            border-top: none;
+            border-bottom: 1.5px solid #111;
+            
+            th{
+                @include Suit_Body_SM_SemiBold;
+                color: #1a1a1a;
+            }
+        }
+    }        
+    }
 }
 
 //컬러박스
