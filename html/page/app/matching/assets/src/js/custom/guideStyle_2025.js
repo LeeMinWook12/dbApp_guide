@@ -340,7 +340,7 @@ $(function(){
 //테이블 표 컬러 추출
 $(function(){
 
-    //테이블 백그라운드컬러
+    //테이블 백그라운드컬러 - 정사각형박스
     $('.guide_table .setBackgroundTD').each(function(){
 
         var $thisColor = $(this).text();
@@ -349,12 +349,41 @@ $(function(){
 
     });
 
-    //테이블 선컬러
+    //테이블 선컬러 - 정사각형박스
     $('.guide_table .setBorderTD').each(function(){
 
         var $thisColor = $(this).text();
 
         $(this).next('td').find('.setColorBox').css({ 'border': '0.5px solid' + $thisColor });
+
+    });
+
+
+
+    //테이블 폰트컬러
+    $('.guide_table .setFontColorTD_c').each(function(){
+
+        var $thisColor = $(this).text();
+
+        $(this).next('td.setColorTD_c').css({ 'color': $thisColor });
+
+    });
+
+    //테이블 백그라운드컬러
+    $('.guide_table .setBackgroundTD_c').each(function(){
+
+        var $thisColor = $(this).text();
+
+        $(this).next('td.setColorTD_c').css({ 'background': $thisColor });
+
+    });
+
+    //테이블 보더컬러
+    $('.guide_table .setBorderTD_c').each(function(){
+
+        var $thisColor = $(this).text();
+
+        $(this).next('td.setColorTD_c').find('.setBox').css({ 'border': '2px solid ' + $thisColor });
 
     });
 
