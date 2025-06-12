@@ -157,7 +157,6 @@ nav .sidenav-trigger{
 .radius04{border-radius: 4px !important;}
 .radius08{border-radius: 8px !important;}
 .radius12{border-radius: 12px !important;}
-.radius12{border-radius: 12px !important;}
 .radius16{border-radius: 16px !important;}
 .radius999{border-radius: 999px !important;}
 //rounded는 버튼 참조
@@ -229,13 +228,13 @@ nav .sidenav-trigger{
 
 .pad16{padding: 16px !important;}
 
-.padH12{padding: 12px 0 !important;}
-
 .pad20{padding: 20px !important;}
 
 .padH06{padding: 6px 0 !important;}
 
 .padH08{padding: 8px 0 !important;}
+
+.padH12{padding: 12px 0 !important;}
 
 .padH16{padding: 16px 0 !important;}
 
@@ -296,8 +295,6 @@ nav .sidenav-trigger{
 .pad_12_20_40{padding: 12px 20px 40px !important;}
 
 .pad_16_12_20{padding: 16px 12px 20px !important;}
-
-.pad_16_16_20{padding: 16px 16px 20px !important;}
 
 .pad_16_16_20{padding: 16px 16px 20px !important;}
 
@@ -981,7 +978,7 @@ hr{border:0; height:1px; background-color: $--Color-bg-Primitive-secondary ;
 .color_b_bsb{color: $--Color-bg-brand-sub-bold;}
 
 .color_b_bss{color: $--Color-bg-brand-sub-subtle;}
-.color_b_ib{color: $--Color-bg-info-bold;}
+.color_b_ibold{color: $--Color-bg-info-bold;}
 .color_b_iss{color: $--Color-bg-info-subtle;}
 .color_b_sb{color: $--Color-bg-success-bold;}
 .color_b_db{color: $--Color-bg-danger-bold;}

@@ -398,9 +398,7 @@
         background-color: #fff;
         transition: 0.3s all;
         
-        &:hover{
-            background-color: #f7f7f7;
-        }
+
     }
 
 
@@ -494,6 +492,26 @@
 
 
   }
+
+
+// Spacing -padding, margin
+.padCtrl{
+    div[class*='pad']{background-color: #F5F5F5;display: inline-block;margin:4px;}
+} 
+
+.marCtrl{
+    display: flex;flex-direction: column;gap: 8px;
+
+    div[class*='mar']{background-color: #F5F5F5;}
+}
+
+.radiusCtrl{
+    display: flex;gap: 20px;
+
+    div{background: #F5F5F5; width: 100px;height: 100px; @include flex_center;}
+}
+
+
 
 
 

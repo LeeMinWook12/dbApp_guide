@@ -1066,9 +1066,6 @@ section .titleNav {
   background-color: #fff;
   transition: 0.3s all;
 }
-.lang_htmlCode:hover {
-  background-color: #f7f7f7;
-}
 
 /* 코드 */
 pre.hljs {
@@ -1143,6 +1140,34 @@ pre.hljs .copy-button.copy_active {
   background-color: rgba(255, 255, 255, 0.14);
   border: 1px solid #6f6f6f;
   border-radius: 4px;
+}
+
+.padCtrl div[class*=pad] {
+  background-color: #F5F5F5;
+  display: inline-block;
+  margin: 4px;
+}
+
+.marCtrl {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.marCtrl div[class*=mar] {
+  background-color: #F5F5F5;
+}
+
+.radiusCtrl {
+  display: flex;
+  gap: 20px;
+}
+.radiusCtrl div {
+  background: #F5F5F5;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex_center {

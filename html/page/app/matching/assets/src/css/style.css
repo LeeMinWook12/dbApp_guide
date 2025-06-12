@@ -566,10 +566,6 @@ nav .sidenav-trigger {
   border-radius: 12px !important;
 }
 
-.radius12 {
-  border-radius: 12px !important;
-}
-
 .radius16 {
   border-radius: 16px !important;
 }
@@ -1078,10 +1074,6 @@ nav .sidenav-trigger {
   padding: 16px !important;
 }
 
-.padH12 {
-  padding: 12px 0 !important;
-}
-
 .pad20 {
   padding: 20px !important;
 }
@@ -1092,6 +1084,10 @@ nav .sidenav-trigger {
 
 .padH08 {
   padding: 8px 0 !important;
+}
+
+.padH12 {
+  padding: 12px 0 !important;
 }
 
 .padH16 {
@@ -1212,10 +1208,6 @@ nav .sidenav-trigger {
 
 .pad_16_12_20 {
   padding: 16px 12px 20px !important;
-}
-
-.pad_16_16_20 {
-  padding: 16px 16px 20px !important;
 }
 
 .pad_16_16_20 {
@@ -2083,7 +2075,7 @@ hr.color_gray {
   color: #EFF1FD;
 }
 
-.color_b_ib {
+.color_b_ibold {
   color: #1D4ED8;
 }
 
