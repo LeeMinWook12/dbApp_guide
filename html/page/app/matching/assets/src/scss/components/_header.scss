@@ -67,4 +67,8 @@ nav.top{
     }
 
     .icon_area{cursor: pointer; display: inline-block;width: 48px;height: 48px;display: flex;justify-content: center;align-items: center;}
+
+    &.trans{
+        background-color: transparent;
+    }
 }

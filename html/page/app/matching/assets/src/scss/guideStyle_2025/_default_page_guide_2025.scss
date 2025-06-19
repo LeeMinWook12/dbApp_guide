@@ -442,6 +442,7 @@
       max-height: 360px;
       background-color: #333;
       padding: 0;
+      text-wrap: wrap;
 
       @include Suit_Body_SM_Regular;
 

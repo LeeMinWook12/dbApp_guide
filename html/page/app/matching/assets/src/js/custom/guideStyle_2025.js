@@ -408,7 +408,7 @@ $(document).ready(function () {
 $(function(){
 
     $(window).on('load', function () {
-        $('nav.sidebar .sidebar_list ul.dept1 > li > a.active:not(.arrow)').each(function () {
+        $('nav.sidebar .sidebar_list ul.dept1 > li > a.active:not(.arrow), nav.sidebar .sidebar_list ul.dept2 > li > a.active').each(function () {
             var winHeight = $(window).height();
             var offsetTop = $(this).offset().top;
             

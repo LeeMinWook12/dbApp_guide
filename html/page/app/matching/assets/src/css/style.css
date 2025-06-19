@@ -3145,6 +3145,10 @@ mark.mk_blue {
   background-image: url("../images/04icon/home.svg");
 }
 
+.i_home_2 {
+  background-image: url("../images/04icon/home_2.svg");
+}
+
 .i_sert {
   background-image: url("../images/08etc/icon_sert.svg");
 }
@@ -3605,6 +3609,9 @@ nav.top .icon_area {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+nav.top.trans {
+  background-color: transparent;
 }
 
 .page-footer {
