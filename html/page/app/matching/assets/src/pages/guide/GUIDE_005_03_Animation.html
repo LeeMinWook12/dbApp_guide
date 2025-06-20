@@ -43,28 +43,9 @@
     <!-- swiper -->
     <link rel="stylesheet" href="/html/page/app/matching/assets/src/js/swiper/swiper-bundle.min.css" />
 
+    <!-- lottie -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-
-
-    <script>
-        //할아버지 아이콘 변경
-        $(function(){
-            $('.progress.progressBarIcon').each(function(){
-
-                //Progress가로값
-                var thisProgressWidth = $(this).outerWidth();
-                //Bar가로값
-                var thisBarWidth = $(this).find('.progress-bar').outerWidth();
-                //백분율 (소수점 올림처리)
-                var thisWidthPercent = Math.ceil((thisBarWidth / thisProgressWidth) * 100);
-
-                //예시)80넘으면 class 추가
-                if(thisWidthPercent >= 80){
-                    $(this).addClass('_no');
-                }
-            });
-        });
-    </script>
 
 
 
@@ -153,11 +134,11 @@
                                     <li><a href="GUIDE_005_C16_TextAreaField.html">TextAreaField</a></li>
                                     <li><a href="GUIDE_005_C17_Accordion.html">Accordion</a></li>
                                     <li><a href="GUIDE_005_C18_Progressbar.html">Progress</a></li>
-                                    <li><a class="active" href="GUIDE_005_C99_Etc.html">Etc</a></li>
+                                    <li><a href="GUIDE_005_C99_Etc.html">Etc</a></li>
                                 </ul>
                             </li>
 
-                            <li><a href="GUIDE_005_03_Animation.html">애니메이션</a></li>
+                            <li><a class="active" href="GUIDE_005_03_Animation.html">애니메이션</a></li>
                             <li><a href="GUIDE_005_04_Images.html">이미지</a></li>
                             <li><a href="GUIDE_005_05_Css.html">CSS 구조</a></li>
                             <li><a href="GUIDE_005_06_Library.html">라이브러리</a></li>
@@ -178,51 +159,55 @@
 
                 <div class="h48"></div>
 
-                <div class="titleNav">Etc</div>
+                <div class="titleNav">Animation</div>
 
                 <div class="h52"></div>
 
-                <h3 class="title fw700">Mark</h3>
+                <h3 class="title fw700">온보딩</h3>
 
-                <div class="lang_htmlCode">
+                <div class="h24"></div>
 
-                    <mark class="mk01">mk01 네이처 요양병원 요양병원 요양병원 요양</mark>병원 요양병원 요양병원 요양
-                    <br>
-                    <mark class="mk02">mk02 네이처 요양병원 요양병원 요양병원 요양</mark>병원 요양병원 요양병원 요양
-                    <br>
-                    <mark class="mk_orange">mk_orange 네이처 요양병원 요양병원 요양병원 요양</mark>병원 요양병원 요양병원 요양
-                    <br>
-                    <mark class="mk_blue">mk_blue 네이처 요양병원 요양병원 요양병원 요양</mark>병원 요양병원 요양병원 요양
+                <div class="row bder_1_bdbdbd radius08 padH40W20">
 
-                </div>
-                <pre><code class="language-html">
-                    &lt;mark class=&quot;mk01&quot;&gt;mk01 Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/mark&gt;
-                    &lt;mark class=&quot;mk02&quot;&gt;mk02 Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/mark&gt;
-                    &lt;mark class=&quot;mk_orange&quot;&gt;mk_orange Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/mark&gt;
-                    &lt;mark class=&quot;mk_blue&quot;&gt;mk_blue Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/mark&gt;
-                </code></pre>
-
-
-                <div class="h52"></div>
-
-                <h3 class="title fw700">Tag</h3>
-
-                <div class="lang_htmlCode">
-
-                    <div class="tag_area">
-                        <span class="tag">관심 복지용구</span>
-                        <span class="tag">85% ~ 100% 지원</span>
-                        <span class="tag">비활성</span>
+                    <div class="col s6">
+                        <dotlottie-player src="/html/page/app/matching/assets/lottie/onboarding_1.lottie" background="transparent" speed="1" style="width: 100%; height: 274px;" loop autoplay></dotlottie-player>
                     </div>
-
+                    <div class="col s6">
+                        <dotlottie-player src="/html/page/app/matching/assets/lottie/onboarding_2.lottie" background="transparent" speed="1" style="width: 100%; height: 274px;" loop autoplay></dotlottie-player>
+                    </div>
+                    <div class="col s6">
+                        <dotlottie-player src="/html/page/app/matching/assets/lottie/onboarding_3.lottie" background="transparent" speed="1" style="width: 100%; height: 274px;" loop autoplay></dotlottie-player>
+                    </div>
+                    <div class="col s6">
+                        <dotlottie-player src="/html/page/app/matching/assets/lottie/onboarding_4.lottie" background="transparent" speed="1" style="width: 100%; height: 274px;" loop autoplay></dotlottie-player>
+                    </div>
+                    
                 </div>
-                <pre><code class="language-html">
-                    &lt;div class=&quot;tag_area&quot;&gt;
-                        &lt;span class=&quot;tag&quot;&gt;Lorem&lt;/span&gt;
-                        &lt;span class=&quot;tag&quot;&gt;ipSum&lt;/span&gt;
-                        &lt;span class=&quot;tag&quot;&gt;consectetur&lt;/span&gt;
-                    &lt;/div&gt;
-                </code></pre>
+
+                <div class="h52"></div>
+
+                <h3 class="title fw700">서브메인</h3>
+
+                <div class="h24"></div>
+
+                <div class="row bder_1_bdbdbd radius08 padH40W20">
+
+                    <div class="col s6">
+                        <dotlottie-player src="/html/page/app/matching/assets/lottie/onboarding_1.lottie" background="transparent" speed="1" style="width: 100%; height: 274px;" loop autoplay></dotlottie-player>
+                    </div>
+                    <div class="col s6">
+                        <dotlottie-player src="/html/page/app/matching/assets/lottie/onboarding_2.lottie" background="transparent" speed="1" style="width: 100%; height: 274px;" loop autoplay></dotlottie-player>
+                    </div>
+                    <div class="col s6">
+                        <dotlottie-player src="/html/page/app/matching/assets/lottie/onboarding_3.lottie" background="transparent" speed="1" style="width: 100%; height: 274px;" loop autoplay></dotlottie-player>
+                    </div>
+                    <div class="col s6">
+                        <dotlottie-player src="/html/page/app/matching/assets/lottie/onboarding_4.lottie" background="transparent" speed="1" style="width: 100%; height: 274px;" loop autoplay></dotlottie-player>
+                    </div>
+                    
+                </div>
+
+
 
 
 

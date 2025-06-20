@@ -1,5 +1,26 @@
 
 
+///////////////////////////
+//3,4번째 상단 메뉴 히든처리
+$(function(){
+    $('.gs_header .header_menu li a:contains("App Screen")').hide();
+    $('.gs_header .header_menu li a:contains("Web Screen")').hide();
+
+    $('nav.sidebardd').hide();
+    $('.total_con_box.mo').click(function(){
+
+        alert('준비중');
+
+        return false;
+
+    });
+
+
+});
+
+
+
+
 $(function(){
     //사이드바 햄버거 버튼
     $('header .gs_header .m_menu').click(function(){
