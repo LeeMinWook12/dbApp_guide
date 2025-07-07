@@ -8,8 +8,8 @@ $(function(){
     // Web Screen
     $('.gs_header .header_menu li a:contains("Web Screen")').hide();
 
-    $('nav.sidebar.ddd').hide();
-    $('nav.sidebar.ddd + section').css('margin','0');
+    // $('nav.sidebar.ddd').hide();
+    // $('nav.sidebar.ddd + section').css('margin','0');
 
 
 
@@ -80,7 +80,7 @@ $(function(){
 $(function () {
 
     //사이드바 메뉴
-    $('.sidebar_list .tab_list[title^="siteMap_"] ul li a').each(function () {
+    $('.sidebar_list .tab_list[title="siteMap_app"] ul li a, .sidebar_list .tab_list[title="siteMap_app_iframe"] ul li a,    .sidebar_list .tab_list[title="siteMap_web"] ul li a, .sidebar_list .tab_list[title="siteMap_web_iframe"] ul li a').each(function () {
 
         if ($(this).hasClass('active')) {
 
