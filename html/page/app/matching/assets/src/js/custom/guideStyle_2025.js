@@ -3,10 +3,20 @@
 ///////////////////////////
 //3,4번째 상단 메뉴 히든처리
 $(function(){
-    $('.gs_header .header_menu li a:contains("App Screen")').hide();
-    $('.gs_header .header_menu li a:contains("Web Screen")').hide();
+    // App Screen
+    // $('.gs_header .header_menu li a:contains("App Screen")').hide();
+    // Web Screen
+    // $('.gs_header .header_menu li a:contains("Web Screen")').hide();
 
-    $('nav.sidebardd').hide();
+    // $('nav.sidebar.ddd').hide();
+    // $('nav.sidebar.ddd + section').css('margin','0');
+
+
+
+    // Search
+    $('.gs_header .header_menu li.search').hide();
+
+
     $('.total_con_box.mo').click(function(){
 
         alert('준비중');
@@ -70,7 +80,7 @@ $(function(){
 $(function () {
 
     //사이드바 메뉴
-    $('.sidebar_list .tab_list[title="siteMap_app"] ul li a, .sidebar_list .tab_list[title="siteMap_app_iframe"] ul li a').each(function () {
+    $('.sidebar_list .tab_list[title^="siteMap_"] ul li a').each(function () {
 
         if ($(this).hasClass('active')) {
 
@@ -282,7 +292,7 @@ $(function(){
 
     ////링크 주소와 함께 페이지 내 iframe주소도 변경////
     //arrow 클라스 href 속성 삭제
-    $('.sidebar_list .tab_list[title="siteMap_app_iframe"] ul li a.arrow').each(function () {
+    $('.sidebar_list .tab_list[title="siteMap_app_iframe"] ul li a.arrow, .sidebar_list .tab_list[title="siteMap_web_iframe"] ul li a.arrow').each(function () {
 
         $(this).removeAttr('href');
 
@@ -317,6 +327,12 @@ $(function(){
         $(this).attr('target', 'if');
 
     });
+    $('.sidebar_list .tab_list[title="siteMap_web"] ul li a').each(function () {
+
+        $(this).attr('href', '/html/page/index/contents/' + $(this).attr('href'));
+        $(this).attr('target', 'if');
+
+    });
 
     ////가이드페이지 - 페이지 내 iframe주소 변경 ////
     //주소링크 생성_sitemap
@@ -338,7 +354,7 @@ $(function(){
         $('.excel_sheet_area').show();
         
         //주소링크
-        $('.excel_sheet_area iframe').attr('src', 'https://docs.google.com/spreadsheets/d/1b1pAw8G-L-S6eTbLzLhh4N_CpH-DDbNHQORZET-Gew0/edit?gid=107441872#gid=107441872');
+        $('.excel_sheet_area iframe').attr('src', 'https://docs.google.com/spreadsheets/d/1yAgnDlpbxnjGNDAAhpCp_CAGVEpgKUvxyrZp-B1yGwU/edit?gid=0#gid=0');
     });
 
 

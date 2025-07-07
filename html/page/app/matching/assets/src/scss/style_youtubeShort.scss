@@ -103,7 +103,7 @@
     
             //재생정지 전체화면영역
             .btn_playStop{
-                position: absolute;z-index: 101;top:0;left: 0;width: 100%;height: calc(100% - 60px);
+                position: absolute;z-index: 101;top:50px;left: 0;width: 100%;height: calc(100% - 130px);
 
                 .ctn_area{
                     position: absolute;bottom: 5px;left: 0;width: calc(100% - 40px);color:#fff;

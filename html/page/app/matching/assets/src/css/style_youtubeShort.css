@@ -101,10 +101,10 @@
 .modal.fullscreen.youtubeShort .shortSwiper .swiper-slide .btn_playStop {
   position: absolute;
   z-index: 101;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
-  height: calc(100% - 60px);
+  height: calc(100% - 130px);
 }
 .modal.fullscreen.youtubeShort .shortSwiper .swiper-slide .btn_playStop .ctn_area {
   position: absolute;

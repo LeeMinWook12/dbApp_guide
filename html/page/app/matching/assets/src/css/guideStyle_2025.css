@@ -439,6 +439,21 @@ nav.sidebar .sidebar_list li a + ul {
 nav.sidebar .sidebar_list li a.active + ul {
   display: block;
 }
+nav.sidebar .sidebar_list li.title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.24px;
+  padding: 12px 0 4px 16px;
+  border-bottom: 1px solid #E0E0E0;
+}
+nav.sidebar .sidebar_list li.hr {
+  border-bottom: 1px dotted #c4c4c4;
+  width: calc(100% - 20px);
+  height: 1px;
+  margin-left: 10px;
+}
 nav.sidebar .sidebar_list ul.dept1 > li > a {
   font-size: 18px;
   font-weight: 700;
@@ -458,7 +473,7 @@ nav.sidebar .sidebar_list ul.dept2 > li > a {
   font-weight: 400 !important;
   line-height: 27px !important; /* 150% */
   letter-spacing: -0.27px !important;
-  padding: 12px 16px 12px 28px;
+  padding: 12px 12px 12px 28px;
   position: relative;
 }
 nav.sidebar .sidebar_list ul.dept2 > li > a::before {
@@ -470,6 +485,9 @@ nav.sidebar .sidebar_list ul.dept2 > li > a::before {
   left: 16px;
   border-radius: 50%;
   background-color: #33363D;
+}
+nav.sidebar .sidebar_list ul.dept2 > li > a.arrow {
+  padding: 12px 36px 12px 28px;
 }
 nav.sidebar .sidebar_list ul.dept2 > li:has(> a.arrow.active) {
   margin: 8px 0;

@@ -3331,6 +3331,119 @@
         <!-- scrollspy -->
 
 
+
+    <input inputmode="numeric" pattern="[0-9]*">
+
+    <style>
+        .mySwiper_test .swiper-slide{
+            height: 200px;
+        } 
+        .mySwiper_test .swiper-slide.sd01{
+            background-color: darkkhaki;
+        }
+        .mySwiper_test .swiper-slide.sd02{
+            background-color: antiquewhite;
+        }
+        .mySwiper_test .swiper-slide.sd03{
+            background-color: #dfdfdf;
+        }
+        .mySwiper_test .swiper-slide .title,
+        .mySwiper_test .swiper-slide p {
+            opacity: 0;
+            transform: translateY(-70px);
+            transition: all 0.8s ease;
+        }
+
+        .mySwiper_test .swiper-slide p {
+            transform: translateY(30px);
+            transition: all 1.0s ease;
+            transition-delay: 0.5s;
+        }
+
+        /* 활성 슬라이드에 애니메이션 적용 */
+        .mySwiper_test .swiper-slide-active .title {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .mySwiper_test .swiper-slide-active p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+    <!-- Swiper -->
+    <div class="swiper mySwiper_test">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide sd01">
+                
+                <h3 class="title">Test01</h3>
+
+                <p>01Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate</p>
+
+            </div>
+            <div class="swiper-slide sd02">
+                
+                <h3 class="title">Test02</h3>
+
+                <p>02Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate</p>
+
+            </div>
+            <div class="swiper-slide sd03">
+                
+                <h3 class="title">Test03</h3>
+
+                <p>03Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate</p>
+
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+
+
+    <link rel="stylesheet" href="../js/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper_test", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            on: {
+                slideChangeTransitionStart: function () {
+                    // 모든 슬라이드 안의 요소 초기화
+                    $('.swiper-slide .title, .swiper-slide p').css({
+                        opacity: 0
+                    });
+                },
+                slideChangeTransitionEnd: function () {
+                    // 현재 활성 슬라이드 요소에만 스타일 적용 제거 (CSS가 다시 적용되도록)
+                    var $active = $('.swiper-slide-active');
+                    $active.find('.title').css({ opacity: '' });
+                    $active.find('p').css({ opacity: '' });
+                }
+            },
+            loop : true,
+        });
+    </script>
+
+
+
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+
+
         <div class="scrollspy">
           <a class="title_g">타이틀예시</a>
           <div class="htmlCode">

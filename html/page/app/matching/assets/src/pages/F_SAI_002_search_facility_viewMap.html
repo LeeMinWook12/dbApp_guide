@@ -88,7 +88,7 @@
                         $('[id$="_modal"]').find('.breadCb .dept01').text(thisTxt);
 
                         //적용하기버튼, breadcrumb dept02 버튼 클릭시
-                        $('[title=region01_apply], .breadCb .dept02').click(function(){
+                        $('[data-title=region01_apply], .breadCb .dept02').click(function(){
 
                             //주소필터 텍스트 변경
                             $('.region01_evt_txt').text($('#region01_modal .dept01').text());
@@ -108,7 +108,7 @@
                         $('[data-title="region01_apply"]').removeClass('btn_disable').addClass('btn_primary');
                         $('[data-title="region02_apply"]').removeClass('btn_disable').addClass('btn_primary');
 
-                        $('[title=region02_apply]').click(function(){
+                        $('[data-title=region02_apply]').click(function(){
 
                             //주소필터 텍스트 변경
                             $('.region01_evt_txt').text($('#region01_modal .dept01').text());
