@@ -4,12 +4,12 @@
 //3,4번째 상단 메뉴 히든처리
 $(function(){
     // App Screen
-    // $('.gs_header .header_menu li a:contains("App Screen")').hide();
+    $('.gs_header .header_menu li a:contains("App Screen")').hide();
     // Web Screen
-    // $('.gs_header .header_menu li a:contains("Web Screen")').hide();
+    $('.gs_header .header_menu li a:contains("Web Screen")').hide();
 
-    // $('nav.sidebar.ddd').hide();
-    // $('nav.sidebar.ddd + section').css('margin','0');
+    $('nav.sidebar.ddd').hide();
+    $('nav.sidebar.ddd + section').css('margin','0');
 
 
 
