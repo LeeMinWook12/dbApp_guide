@@ -8,8 +8,8 @@ $(function(){
     // Web Screen
     $('.gs_header .header_menu li a:contains("Web Screen")').hide();
 
-    // $('nav.sidebar.ddd').hide();
-    // $('nav.sidebar.ddd + section').css('margin','0');
+    $('nav.sidebar.ddd').hide();
+    $('nav.sidebar.ddd + section').css('margin','0');
 
 
 
