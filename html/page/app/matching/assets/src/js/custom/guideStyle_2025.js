@@ -4,26 +4,27 @@
 //3,4번째 상단 메뉴 히든처리
 $(function(){
     // App Screen
-    $('.gs_header .header_menu li a:contains("App Screen")').hide();
+    //$('.gs_header .header_menu li a:contains("App Screen")').hide();
     // Web Screen
-    $('.gs_header .header_menu li a:contains("Web Screen")').hide();
+    //$('.gs_header .header_menu li a:contains("Web Screen")').hide();
 
-    $('nav.sidebar.ddd').hide();
-    $('nav.sidebar.ddd + section').css('margin','0');
+    //사용안함
+    //$('nav.sidebar.ddd').hide();
+    //$('nav.sidebar.ddd + section').css('margin','0');
 
 
 
     // Search
     $('.gs_header .header_menu li.search').hide();
+    $('nav.sidebar .sidebar_header .sidebar_search').hide();
 
+    // $('.total_con_box.mo').click(function(){
 
-    $('.total_con_box.mo').click(function(){
+    //     alert('준비중');
 
-        alert('준비중');
+    //     return false;
 
-        return false;
-
-    });
+    // });
 
 
 });
