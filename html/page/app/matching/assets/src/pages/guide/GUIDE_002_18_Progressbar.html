@@ -137,15 +137,14 @@
                 <div class="h24"></div>
 
                 <div class="roundBox_01 flex_center h240">
-                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_87_01_accordion.svg" alt="">
+                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_91_01_progressbar.svg" alt="">
                 </div>
 
                 <div class="h16"></div>
 
                 <ul class="d-flex gap16 color_t_s font_ssr">
-                    <li>1.Title</li>
-                    <li>2.ArrowDown / UP</li>
-                    <li>3.Contents</li>
+                    <li>1.Container</li>
+                    <li>2.ProgressBar</li>
                 </ul>
 
 
@@ -157,52 +156,50 @@
 
                 <div class="roundBox_01 noPad back_E0E0E0">
                     <div class="grid_container">
-                        <div class="item flex_center h220">
+                        <div class="item flex_center h200">
                             <div class="infoFix">
                                 <span class="f_head text">Collapsed</span>
                                 <div>
-                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_88_01_accordion.svg" alt="">
+                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_92_01_progressbar.svg" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="item flex_center h220">
+                        <div class="item flex_center h200">
                             <div class="infoFix">
                                 <span class="f_head text">Expended</span>
                                 <div>
-                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_88_02_accordion.svg" alt="">
+                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_92_02_progressbar.svg" alt="">
                                 </div>
                             </div>
                         </div>
+                        <div class="item flex_center h200">
+                            <div class="infoFix">
+                                <span class="f_head text">Collapsed</span>
+                                <div>
+                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_92_03_progressbar.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item flex_center h200">
+                            <div class="infoFix">
+                                <span class="f_head text">Expended</span>
+                                <div>
+                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_92_04_progressbar.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item flex_center h200">
+                            <div class="infoFix">
+                                <span class="f_head text">Expended</span>
+                                <div>
+                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_92_05_progressbar.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item flex_center"></div>
                     </div>
                 </div>
 
-
-                <div class="h52"></div>
-
-                <h3 class="title fw700">Size, 크기</h3>
-
-                <div class="h24"></div>
-
-                <div class="roundBox_01 noPad back_E0E0E0">
-                    <div class="grid_container">
-                        <div class="item flex_center h220">
-                            <div class="infoFix">
-                                <span class="f_head text">SM</span>
-                                <div>
-                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_88_01_accordion.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item flex_center h220">
-                            <div class="infoFix">
-                                <span class="f_head text">LG</span>
-                                <div>
-                                    <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_89_02_accordion.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="h52"></div>
 
@@ -219,20 +216,20 @@
                     <thead>
                         <tr>
                             <th>Property</th>
-                            <th>Values</th>
-                            <th>Default Value</th>
+                            <th>Type</th>
+                            <th>ProgressStep</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><span class="color_tp_s font_sbss">Type</span></td>
-                            <td>Collapsed,Expended </td>
-                            <td>Collapsed</td>
+                            <td><span class="color_tp_s font_sbss">Values</span></td>
+                            <td>Thick, Default, Thin, IconWithBar, MultiStepBar</td>
+                            <td>1,2,3,4</td>
                         </tr>
                         <tr>
-                            <td><span class="color_tp_s font_sbss">Size</span></td>
-                            <td>SM, LG</td>
-                            <td>SM</td>
+                            <td><span class="color_tp_s font_sbss">Default Value</span></td>
+                            <td>Default</td>
+                            <td>1</td>
                         </tr>
                     </tbody>
                 </table>
@@ -243,33 +240,44 @@
 
                 <div class="h24"></div>
 
-                <h5 class="title fw700">헤더 전체를 클릭 가능하도록 만듭니다.</h5>
+                <h5 class="title fw700">Container는 배경색 또는 Border-radius 스타일을 적용할 수 있어야 합니다.</h5>
 
                 <div class="h08"></div>
 
                 <div class="color_tp_s font_sbmr">
-                    상호작용이 가능한 타깃 영역이 클수록 사용자가 더 쉽게 조작할 수 있어야 합니다.
-                    사용자가 패널을 펼치거나 접기 위해 헤더 전체를 클릭할 수 있도록 구현해야 합니다.
+                    Container는 상황에 따라 다양한 배경색이나 모서리 둥글기(Border-radius)를 적용하여,
+                    각 화면의 컨텍스트와 시각적 일관성에 맞게 유연하게 표현해야 합니다.
                 </div>
 
                 <div class="h24"></div>
 
-                <h5 class="title fw700">아코디언은 기본적으로 첫 번째 영역이 펼쳐진 상태여야 합니다.</h5>
+                <h5 class="title fw700">ProgressBar는 단색 또는 Gradient 스타일을 적용할 수 있습니다.</h5>
 
                 <div class="h08"></div>
 
                 <div class="color_tp_s font_sbmr">
-                    여러 개의 아코디언이 있는 경우, 가장 처음 위치한 아코디언은 반드시 펼침 상태로 구현해야 합니다.
+                    진행 구간은 단색 또는 그라데이션 스타일로 표현할 수 있으며, 서비스 톤앤매너에 따라 일관성 있게 적용해야 합니다.
                 </div>
 
                 <div class="h24"></div>
 
-                <h5 class="title fw700">하나의 아코디언이 펼쳐지면, 기존에 열려 있던 아코디언은 닫혀야 합니다.</h5>
+                <h5 class="title fw700">부가 요소(아이콘, 라벨, 스텝 표시)는 상황에 따라 선택적으로 사용할 수 있습니다.</h5>
 
                 <div class="h08"></div>
 
                 <div class="color_tp_s font_sbmr">
-                    아코디언은 하나만 펼칠 수 있으며, 다른 항목을 펼치면 기존에 열려 있던 항목은 자동으로 닫혀야 합니다.
+                    아이콘이나 텍스트 라벨은 사용자의 현재 상태를 보조하거나, 스텝 구간 구분을 돕는 역할을 하며 필요한 경우에만 노출합니다.
+                </div>
+
+                <div class="h24"></div>
+
+                <h5 class="title fw700">다단계 Progress가 필요한 경우, 컴포넌트를 분해하여 사용해야 합니다.</h5>
+
+                <div class="h08"></div>
+
+                <div class="color_tp_s font_sbmr">
+                    기존 Progress 컴포넌트는 기본적인 1~4개 단계 기준으로 설계되어 있으며,<br>
+                    5단계 이상 복잡한 진행 표시가 필요할 경우, 컴포넌트를 분리하거나 새롭게 구성하여 사용해야 합니다.
                 </div>
 
                 <div class="h16"></div>
@@ -278,7 +286,7 @@
                 <div class="roundBox_01 flex_center">
                     <div>
                         <div class="h20"></div>
-                        <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_90_01_accordion.svg" alt="">
+                        <img class="disBlock" src="/html/page/app/matching/assets/src/images/100guide/002_component/back_comp_93_01_progressbar.svg" alt="">
                         <div class="h20"></div>
                     </div>
                 </div>
